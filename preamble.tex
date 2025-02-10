@@ -1,0 +1,44 @@
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={Физика},
+    pdfauthor={},
+    pdfsubject={},
+    pdfkeywords={Определение, формула, законы, процессы},
+}
+
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}
+
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% Настройка верхнего колонтитула
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\rightmark} % Левый верхний угол: название главы
+\fancyhead[R]{\thepage} % Правый верхний угол: номер страницы
+\renewcommand{\headrulewidth}{0.2pt} % Линия под верхним колонтитулом
