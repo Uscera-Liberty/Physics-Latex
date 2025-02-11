@@ -1,0 +1,522 @@
+\chapter{Электричество и магнетизм}
+
+\section{Электрическое поле}
+Напряженность электрического поля
+\[ \vec E = \frac{\vec F}{q} \text{(векторная)}\]
+\begin{center}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.5755455765500463cm,y=1.4141895319101883cm]
+        \clip(26.95,39.98) rectangle (37.37,42.39);
+        \draw [line width=1.6pt,color=ffqqqq] (33,41) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](32.83,41.34) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (35,41) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](34.82,41.34) node[anchor=north west] {$-$};
+        \draw [->] (35.28,40.99) -- (36.4,40.97);
+        \draw (35.57,41.77) node[anchor=north west] {$\vec E$};
+        \draw [->] (34.71,40.99) -- (33.69,40.97);
+        \draw (34.19,41.75) node[anchor=north west] {$\vec F$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](29,46.2) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](31.75,46.34) node[anchor=north west] {$-$};
+        \draw (32.91,41.74) node[anchor=north west] {q};
+        \draw (34.82,41.94) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw [line width=1.6pt,color=ffqqqq] (27.96,41) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](27.8,41.35) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.68,41.02) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](29.51,41.37) node[anchor=north west] {$+$};
+        \draw [->] (29.96,41) -- (31.24,40.99);
+        \draw (30.4,41.78) node[anchor=north west] {$\vec F$};
+        \draw (30.34,41.03) node[anchor=north west] {$\vec E$};
+        \draw (29.44,42.01) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw (27.89,41.82) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=qqqqff] (28.02,39.04) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](27.83,39.37) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=qqqqff] (29.69,39.02) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](29.51,39.35) node[anchor=north west] {$-$};
+        \draw [->] (29.98,39) -- (31.22,39);
+        \draw [line width=1.6pt,color=qqqqff] (33.03,39.02) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](32.85,39.35) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=ffqqqq] (35,39.03) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](34.83,39.37) node[anchor=north west] {$+$};
+        \draw [->] (34.74,39.13) -- (33.63,39.15);
+        \draw [->] (34.75,38.9) -- (33.59,38.88);
+        \draw (30.31,39.83) node[anchor=north west] {$\vec F$};
+        \draw (34.16,39.86) node[anchor=north west] {$\vec F$};
+        \draw (30.28,38.92) node[anchor=north west] {$\vec E$};
+        \draw (34.11,38.89) node[anchor=north west] {$\vec E$};
+        \draw [line width=1.6pt,color=ffqqqq] (28.01,36.06) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](27.85,36.4) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (30.96,36.05) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](30.84,36.44) node[anchor=north west] {$-$};
+        \draw (28.29,36.02)-- (30.68,36.01);
+        \draw [->] (30.68,36.01) -- (29,36.02);
+        \draw (29.51,36.78) node[anchor=north west] {$\vec P$};
+        \draw (29.56,36.09) node[anchor=north west] {$l$};
+        \draw (27.96,39.7) node[anchor=north west] {q};
+        \draw (27.96,36.83) node[anchor=north west] {q};
+        \draw (31.04,36.78) node[anchor=north west] {q};
+        \draw (32.98,39.7) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=ffqqqq] (28.04,31.02) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](27.86,31.37) node[anchor=north west] {$+$};
+        \draw [->] (28.01,31.61) -- (27.99,32.55);
+        \draw [->] (28.42,31.55) -- (29.28,32.33);
+        \draw [->] (28.6,31.19) -- (29.66,31.25);
+        \draw [->] (28.58,30.6) -- (29.54,30.15);
+        \draw [->] (28.2,30.29) -- (28.71,29.58);
+        \draw [->] (27.57,30.25) -- (26.96,29.66);
+        \draw [->] (27.51,30.7) -- (26.45,30.35);
+        \draw [->] (27.4,31.21) -- (26.51,31.73);
+        \draw [line width=1.6pt,color=qqqqff] (31.99,31.14) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](31.81,31.47) node[anchor=north west] {$-$};
+        \draw [->] (31.96,31.61) -- (31.88,32.49);
+        \draw [->] (31.39,31.39) -- (30.7,31.82);
+        \draw [->] (31.33,30.68) -- (30.48,30);
+        \draw [->] (31.94,30.6) -- (32.21,29.7);
+        \draw [->] (32.45,30.98) -- (33.28,30.58);
+        \draw [->] (32.53,31.51) -- (33.32,32.02);
+        \draw [line width=1.6pt,color=ffqqqq] (36,31) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](35.86,31.33) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (38,31) ellipse (0.45cm and 0.4cm);
+        \draw [color=qqqqff](37.85,31.36) node[anchor=north west] {$-$};
+        \draw [->] (36.28,31.02) -- (37.72,31.02);
+        \draw [->] (35.76,31.16) -- (35.5,31.5);
+        \draw [->] (35.77,30.84) -- (35.47,30.61);
+        \draw [->] (38.68,30.46) -- (38.21,30.81);
+        \draw [->] (38.5,31.5) -- (38.13,31.25);
+        \draw [shift={(37.02,30.3)}] plot[domain=0.83:2.32,variable=\t]({1*1.31*cos(\t r)+0*1.31*sin(\t r)},{0*1.31*cos(\t r)+1*1.31*sin(\t r)});
+        \draw [shift={(36.98,31.65)}] plot[domain=3.95:5.49,variable=\t]({1*1.23*cos(\t r)+0*1.23*sin(\t r)},{0*1.23*cos(\t r)+1*1.23*sin(\t r)});
+        \draw [shift={(36.97,29.37)}] plot[domain=1.16:1.96,variable=\t]({1*1.95*cos(\t r)+0*1.95*sin(\t r)},{0*1.95*cos(\t r)+1*1.95*sin(\t r)});
+        \draw [shift={(36.76,33.3)}] plot[domain=4.47:5.1,variable=\t]({1*2.63*cos(\t r)+0*2.63*sin(\t r)},{0*2.63*cos(\t r)+1*2.63*sin(\t r)});
+        \draw [rotate around={0:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (3.23cm and 0.63cm);
+        \draw [dash pattern=on 1pt off 1pt] (31,53) ellipse (3.15cm and 2.83cm);
+        \draw [rotate around={90:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (3.21cm and 0.56cm);
+        \draw [line width=1.6pt,color=ffqqqq] (30.96,53.02) ellipse (0.45cm and 0.4cm);
+        \draw [color=ffqqqq](30.79,53.36) node[anchor=north west] {$+$};
+        \draw [->] (31.13,53.25) -- (32,54);
+        \draw [->] (30.73,53.19) -- (29.99,53.63);
+        \draw [->] (30.87,52.76) -- (30.36,52.04);
+        \draw [->] (31.17,52.85) -- (32,52.31);
+    \end{tikzpicture}
+\end{center}
+Получим, что линии напряженности электрического поля направлены от положительного заряда к отрицательному:
+
+\begin{center}
+
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.3229395145530378cm,y=1.0cm]
+        \clip(27.33,37.96) rectangle (36.62,40.02);
+        \draw [line width=1.6pt,color=ffqqqq] (33,41) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](32.83,41.34) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (35,41) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](34.82,41.34) node[anchor=north west] {$-$};
+        \draw [->] (35.28,40.99) -- (36.4,40.97);
+        \draw (35.57,41.77) node[anchor=north west] {$\vec E$};
+        \draw [->] (34.71,40.99) -- (33.69,40.97);
+        \draw (34.19,41.75) node[anchor=north west] {$\vec F$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](29,46.2) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](31.75,46.34) node[anchor=north west] {$-$};
+        \draw (32.91,41.74) node[anchor=north west] {q};
+        \draw (34.82,41.94) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw [line width=1.6pt,color=ffqqqq] (27.96,41) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](27.8,41.35) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.68,41.02) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](29.51,41.37) node[anchor=north west] {$+$};
+        \draw [->] (29.96,41) -- (31.24,40.99);
+        \draw (30.4,41.78) node[anchor=north west] {$\vec F$};
+        \draw (30.34,41.03) node[anchor=north west] {$\vec E$};
+        \draw (29.44,42.01) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw (27.89,41.82) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=qqqqff] (28.02,39.04) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](27.83,39.37) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=qqqqff] (29.69,39.02) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](29.51,39.35) node[anchor=north west] {$-$};
+        \draw [->] (29.98,39) -- (31.22,39);
+        \draw [line width=1.6pt,color=qqqqff] (33.03,39.02) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](32.85,39.35) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=ffqqqq] (35,39.03) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](34.83,39.37) node[anchor=north west] {$+$};
+        \draw [->] (34.74,39.13) -- (33.63,39.15);
+        \draw [->] (34.75,38.9) -- (33.59,38.88);
+        \draw (30.31,39.83) node[anchor=north west] {$\vec F$};
+        \draw (34.16,39.86) node[anchor=north west] {$\vec F$};
+        \draw (30.28,38.92) node[anchor=north west] {$\vec E$};
+        \draw (34.11,38.89) node[anchor=north west] {$\vec E$};
+        \draw [line width=1.6pt,color=ffqqqq] (28.01,36.06) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](27.85,36.4) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (30.96,36.05) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](30.84,36.44) node[anchor=north west] {$-$};
+        \draw (28.29,36.02)-- (30.68,36.01);
+        \draw [->] (30.68,36.01) -- (29,36.02);
+        \draw (29.51,36.78) node[anchor=north west] {$\vec P$};
+        \draw (29.56,36.09) node[anchor=north west] {$l$};
+        \draw (27.96,39.7) node[anchor=north west] {q};
+        \draw (27.96,36.83) node[anchor=north west] {q};
+        \draw (31.04,36.78) node[anchor=north west] {q};
+        \draw (32.98,39.7) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=ffqqqq] (28.04,31.02) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](27.86,31.37) node[anchor=north west] {$+$};
+        \draw [->] (28.01,31.61) -- (27.99,32.55);
+        \draw [->] (28.42,31.55) -- (29.28,32.33);
+        \draw [->] (28.6,31.19) -- (29.66,31.25);
+        \draw [->] (28.58,30.6) -- (29.54,30.15);
+        \draw [->] (28.2,30.29) -- (28.71,29.58);
+        \draw [->] (27.57,30.25) -- (26.96,29.66);
+        \draw [->] (27.51,30.7) -- (26.45,30.35);
+        \draw [->] (27.4,31.21) -- (26.51,31.73);
+        \draw [line width=1.6pt,color=qqqqff] (31.99,31.14) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](31.81,31.47) node[anchor=north west] {$-$};
+        \draw [->] (31.96,31.61) -- (31.88,32.49);
+        \draw [->] (31.39,31.39) -- (30.7,31.82);
+        \draw [->] (31.33,30.68) -- (30.48,30);
+        \draw [->] (31.94,30.6) -- (32.21,29.7);
+        \draw [->] (32.45,30.98) -- (33.28,30.58);
+        \draw [->] (32.53,31.51) -- (33.32,32.02);
+        \draw [line width=1.6pt,color=ffqqqq] (36,31) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](35.86,31.33) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (38,31) ellipse (0.37cm and 0.28cm);
+        \draw [color=qqqqff](37.85,31.36) node[anchor=north west] {$-$};
+        \draw [->] (36.28,31.02) -- (37.72,31.02);
+        \draw [->] (35.76,31.16) -- (35.5,31.5);
+        \draw [->] (35.77,30.84) -- (35.47,30.61);
+        \draw [->] (38.68,30.46) -- (38.21,30.81);
+        \draw [->] (38.5,31.5) -- (38.13,31.25);
+        \draw [shift={(37.02,30.3)}] plot[domain=0.83:2.32,variable=\t]({1*1.31*cos(\t r)+0*1.31*sin(\t r)},{0*1.31*cos(\t r)+1*1.31*sin(\t r)});
+        \draw [shift={(36.98,31.65)}] plot[domain=3.95:5.49,variable=\t]({1*1.23*cos(\t r)+0*1.23*sin(\t r)},{0*1.23*cos(\t r)+1*1.23*sin(\t r)});
+        \draw [shift={(36.97,29.37)}] plot[domain=1.16:1.96,variable=\t]({1*1.95*cos(\t r)+0*1.95*sin(\t r)},{0*1.95*cos(\t r)+1*1.95*sin(\t r)});
+        \draw [shift={(36.76,33.3)}] plot[domain=4.47:5.1,variable=\t]({1*2.63*cos(\t r)+0*2.63*sin(\t r)},{0*2.63*cos(\t r)+1*2.63*sin(\t r)});
+        \draw [rotate around={0:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.71cm and 0.44cm);
+        \draw [dash pattern=on 1pt off 1pt] (31,53) ellipse (2.65cm and 2cm);
+        \draw [rotate around={90:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.7cm and 0.39cm);
+        \draw [line width=1.6pt,color=ffqqqq] (30.96,53.02) ellipse (0.37cm and 0.28cm);
+        \draw [color=ffqqqq](30.79,53.36) node[anchor=north west] {$+$};
+        \draw [->] (31.13,53.25) -- (32,54);
+        \draw [->] (30.73,53.19) -- (29.99,53.63);
+        \draw [->] (30.87,52.76) -- (30.36,52.04);
+        \draw [->] (31.17,52.85) -- (32,52.31);
+    \end{tikzpicture}
+\end{center}
+
+Величина напряженности точечного заряда:
+\[ E = \frac{1}{4 \pi \epsilon_0}\frac{q}{r^2}\]
+
+\textbf{Принцип суперпозиции полей:} Если имеется несколько электрических полей $\vec E_1, \vec E_2, \ldots , \vec E_n$, то
+\[ \vec E = \sum_{i = 1}^{n} \vec E_i\]
+Это вытекает из принципа суперпозции сил.
+\subsection{Электрический диполь}
+\define \textit{\textbf{Электрический диполь} - это такая структура, состоящая из пары зарядов. }
+\begin{center}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.9772284268505984cm,y=1.6583433612467202cm]
+        \clip(27.11,34.97) rectangle (32.23,37.1);
+        \draw [line width=1.6pt,color=ffqqqq] (33,41) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](32.83,41.34) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (35,41) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](34.82,41.34) node[anchor=north west] {$-$};
+        \draw [->] (35.28,40.99) -- (36.4,40.97);
+        \draw (35.57,41.77) node[anchor=north west] {$\vec E$};
+        \draw [->] (34.71,40.99) -- (33.69,40.97);
+        \draw (34.19,41.75) node[anchor=north west] {$\vec F$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](29,46.2) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](31.75,46.34) node[anchor=north west] {$-$};
+        \draw (32.91,41.74) node[anchor=north west] {q};
+        \draw (34.82,41.94) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw [line width=1.6pt,color=ffqqqq] (27.96,41) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](27.8,41.35) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.68,41.02) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](29.51,41.37) node[anchor=north west] {$+$};
+        \draw [->] (29.96,41) -- (31.24,40.99);
+        \draw (30.4,41.78) node[anchor=north west] {$\vec F$};
+        \draw (30.34,41.03) node[anchor=north west] {$\vec E$};
+        \draw (29.44,42.01) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw (27.89,41.82) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=qqqqff] (28.02,39.04) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](27.83,39.37) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=qqqqff] (29.69,39.02) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](29.51,39.35) node[anchor=north west] {$-$};
+        \draw [->] (29.98,39) -- (31.22,39);
+        \draw [line width=1.6pt,color=qqqqff] (33.03,39.02) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](32.85,39.35) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=ffqqqq] (35,39.03) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](34.83,39.37) node[anchor=north west] {$+$};
+        \draw [->] (34.74,39.13) -- (33.63,39.15);
+        \draw [->] (34.75,38.9) -- (33.59,38.88);
+        \draw (30.31,39.83) node[anchor=north west] {$\vec F$};
+        \draw (34.16,39.86) node[anchor=north west] {$\vec F$};
+        \draw (30.28,38.92) node[anchor=north west] {$\vec E$};
+        \draw (34.11,38.89) node[anchor=north west] {$\vec E$};
+        \draw [line width=1.6pt,color=ffqqqq] (28.01,36.06) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](27.85,36.4) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (30.96,36.05) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](30.84,36.44) node[anchor=north west] {$-$};
+        \draw (28.29,36.02)-- (30.68,36.01);
+        \draw [->] (30.68,36.01) -- (29,36.02);
+        \draw (29.51,36.78) node[anchor=north west] {$\vec P$};
+        \draw (29.56,36.09) node[anchor=north west] {$l$};
+        \draw (27.96,39.7) node[anchor=north west] {q};
+        \draw (27.96,36.83) node[anchor=north west] {q};
+        \draw (31.04,36.78) node[anchor=north west] {q};
+        \draw (32.98,39.7) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=ffqqqq] (28.04,31.02) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](27.86,31.37) node[anchor=north west] {$+$};
+        \draw [->] (28.01,31.61) -- (27.99,32.55);
+        \draw [->] (28.42,31.55) -- (29.28,32.33);
+        \draw [->] (28.6,31.19) -- (29.66,31.25);
+        \draw [->] (28.58,30.6) -- (29.54,30.15);
+        \draw [->] (28.2,30.29) -- (28.71,29.58);
+        \draw [->] (27.57,30.25) -- (26.96,29.66);
+        \draw [->] (27.51,30.7) -- (26.45,30.35);
+        \draw [->] (27.4,31.21) -- (26.51,31.73);
+        \draw [line width=1.6pt,color=qqqqff] (31.99,31.14) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](31.81,31.47) node[anchor=north west] {$-$};
+        \draw [->] (31.96,31.61) -- (31.88,32.49);
+        \draw [->] (31.39,31.39) -- (30.7,31.82);
+        \draw [->] (31.33,30.68) -- (30.48,30);
+        \draw [->] (31.94,30.6) -- (32.21,29.7);
+        \draw [->] (32.45,30.98) -- (33.28,30.58);
+        \draw [->] (32.53,31.51) -- (33.32,32.02);
+        \draw [line width=1.6pt,color=ffqqqq] (36,31) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](35.86,31.33) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (38,31) ellipse (0.56cm and 0.47cm);
+        \draw [color=qqqqff](37.85,31.36) node[anchor=north west] {$-$};
+        \draw [->] (36.28,31.02) -- (37.72,31.02);
+        \draw [->] (35.76,31.16) -- (35.5,31.5);
+        \draw [->] (35.77,30.84) -- (35.47,30.61);
+        \draw [->] (38.68,30.46) -- (38.21,30.81);
+        \draw [->] (38.5,31.5) -- (38.13,31.25);
+        \draw [shift={(37.02,30.3)}] plot[domain=0.83:2.32,variable=\t]({1*1.31*cos(\t r)+0*1.31*sin(\t r)},{0*1.31*cos(\t r)+1*1.31*sin(\t r)});
+        \draw [shift={(36.98,31.65)}] plot[domain=3.95:5.49,variable=\t]({1*1.23*cos(\t r)+0*1.23*sin(\t r)},{0*1.23*cos(\t r)+1*1.23*sin(\t r)});
+        \draw [shift={(36.97,29.37)}] plot[domain=1.16:1.96,variable=\t]({1*1.95*cos(\t r)+0*1.95*sin(\t r)},{0*1.95*cos(\t r)+1*1.95*sin(\t r)});
+        \draw [shift={(36.76,33.3)}] plot[domain=4.47:5.1,variable=\t]({1*2.63*cos(\t r)+0*2.63*sin(\t r)},{0*2.63*cos(\t r)+1*2.63*sin(\t r)});
+        \draw [rotate around={0:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (4.05cm and 0.73cm);
+        \draw [dash pattern=on 1pt off 1pt] (31,53) ellipse (3.95cm and 3.32cm);
+        \draw [rotate around={90:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (4.03cm and 0.65cm);
+        \draw [line width=1.6pt,color=ffqqqq] (30.96,53.02) ellipse (0.56cm and 0.47cm);
+        \draw [color=ffqqqq](30.79,53.36) node[anchor=north west] {$+$};
+        \draw [->] (31.13,53.25) -- (32,54);
+        \draw [->] (30.73,53.19) -- (29.99,53.63);
+        \draw [->] (30.87,52.76) -- (30.36,52.04);
+        \draw [->] (31.17,52.85) -- (32,52.31);
+    \end{tikzpicture}
+\end{center}
+
+Для характеристики данной структуры используют \textbf{момент диполя}: $\vec P = q \cdot l$ , причем направлен он от отрицательного заряда к положительному.
+\subsection{Линии напряженности электрического поля}
+\begin{center}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.2300461177083677cm,y=1.2479929779551238cm]
+        \clip(26.1,28.86) rectangle (39.14,32.89);
+        \draw [line width=1.6pt,color=ffqqqq] (33,41) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](32.84,41.36) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (35,41) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](34.83,41.35) node[anchor=north west] {$-$};
+        \draw [->] (35.28,40.99) -- (36.4,40.97);
+        \draw (35.57,41.79) node[anchor=north west] {$\vec E$};
+        \draw [->] (34.71,40.99) -- (33.69,40.97);
+        \draw (34.19,41.76) node[anchor=north west] {$\vec F$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](29,46.2) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](31.74,46.36) node[anchor=north west] {$-$};
+        \draw (32.93,41.74) node[anchor=north west] {q};
+        \draw (34.81,41.95) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw [line width=1.6pt,color=ffqqqq] (27.96,41) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](27.79,41.36) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.68,41.02) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](29.51,41.38) node[anchor=north west] {$+$};
+        \draw [->] (29.96,41) -- (31.24,40.99);
+        \draw (30.4,41.81) node[anchor=north west] {$\vec F$};
+        \draw (30.33,41.06) node[anchor=north west] {$\vec E$};
+        \draw (29.44,42.02) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw (27.9,41.83) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=qqqqff] (28.02,39.04) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](27.83,39.39) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=qqqqff] (29.69,39.02) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](29.51,39.37) node[anchor=north west] {$-$};
+        \draw [->] (29.98,39) -- (31.22,39);
+        \draw [line width=1.6pt,color=qqqqff] (33.03,39.02) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](32.84,39.37) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=ffqqqq] (35,39.03) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](34.83,39.39) node[anchor=north west] {$+$};
+        \draw [->] (34.74,39.13) -- (33.63,39.15);
+        \draw [->] (34.75,38.9) -- (33.59,38.88);
+        \draw (30.3,39.84) node[anchor=north west] {$\vec F$};
+        \draw (34.16,39.89) node[anchor=north west] {$\vec F$};
+        \draw (30.28,38.93) node[anchor=north west] {$\vec E$};
+        \draw (34.11,38.91) node[anchor=north west] {$\vec E$};
+        \draw [line width=1.6pt,color=ffqqqq] (28.01,36.06) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](27.85,36.41) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (30.96,36.05) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](30.83,36.46) node[anchor=north west] {$-$};
+        \draw (28.29,36.02)-- (30.68,36.01);
+        \draw [->] (30.68,36.01) -- (29,36.02);
+        \draw (29.51,36.78) node[anchor=north west] {$\vec P$};
+        \draw (29.54,36.1) node[anchor=north west] {$l$};
+        \draw (27.95,39.72) node[anchor=north west] {q};
+        \draw (27.95,36.85) node[anchor=north west] {q};
+        \draw (31.04,36.78) node[anchor=north west] {q};
+        \draw (32.98,39.72) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=ffqqqq] (28.04,31.02) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](27.86,31.38) node[anchor=north west] {$+$};
+        \draw [->] (28.01,31.61) -- (27.99,32.55);
+        \draw [->] (28.42,31.55) -- (29.28,32.33);
+        \draw [->] (28.6,31.19) -- (29.66,31.25);
+        \draw [->] (28.58,30.6) -- (29.54,30.15);
+        \draw [->] (28.2,30.29) -- (28.71,29.58);
+        \draw [->] (27.57,30.25) -- (26.96,29.66);
+        \draw [->] (27.51,30.7) -- (26.45,30.35);
+        \draw [->] (27.4,31.21) -- (26.51,31.73);
+        \draw [line width=1.6pt,color=qqqqff] (31.99,31.14) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](31.81,31.48) node[anchor=north west] {$-$};
+        \draw [->] (31.96,31.61) -- (31.88,32.49);
+        \draw [->] (31.39,31.39) -- (30.7,31.82);
+        \draw [->] (31.33,30.68) -- (30.48,30);
+        \draw [->] (31.94,30.6) -- (32.21,29.7);
+        \draw [->] (32.45,30.98) -- (33.28,30.58);
+        \draw [->] (32.53,31.51) -- (33.32,32.02);
+        \draw [line width=1.6pt,color=ffqqqq] (36,31) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](35.84,31.34) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (38,31) ellipse (0.35cm and 0.35cm);
+        \draw [color=qqqqff](37.85,31.36) node[anchor=north west] {$-$};
+        \draw [->] (36.28,31.02) -- (37.72,31.02);
+        \draw [->] (35.76,31.16) -- (35.5,31.5);
+        \draw [->] (35.77,30.84) -- (35.47,30.61);
+        \draw [->] (38.68,30.46) -- (38.21,30.81);
+        \draw [->] (38.5,31.5) -- (38.13,31.25);
+        \draw [shift={(37.02,30.3)}] plot[domain=0.83:2.32,variable=\t]({1*1.31*cos(\t r)+0*1.31*sin(\t r)},{0*1.31*cos(\t r)+1*1.31*sin(\t r)});
+        \draw [shift={(36.98,31.65)}] plot[domain=3.95:5.49,variable=\t]({1*1.23*cos(\t r)+0*1.23*sin(\t r)},{0*1.23*cos(\t r)+1*1.23*sin(\t r)});
+        \draw [shift={(36.97,29.37)}] plot[domain=1.16:1.96,variable=\t]({1*1.95*cos(\t r)+0*1.95*sin(\t r)},{0*1.95*cos(\t r)+1*1.95*sin(\t r)});
+        \draw [shift={(36.76,33.3)}] plot[domain=4.47:5.1,variable=\t]({1*2.63*cos(\t r)+0*2.63*sin(\t r)},{0*2.63*cos(\t r)+1*2.63*sin(\t r)});
+        \draw [rotate around={0:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.52cm and 0.55cm);
+        \draw [dash pattern=on 1pt off 1pt] (31,53) ellipse (2.46cm and 2.5cm);
+        \draw [rotate around={90:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.51cm and 0.49cm);
+        \draw [line width=1.6pt,color=ffqqqq] (30.96,53.02) ellipse (0.35cm and 0.35cm);
+        \draw [color=ffqqqq](30.8,53.38) node[anchor=north west] {$+$};
+        \draw [->] (31.13,53.25) -- (32,54);
+        \draw [->] (30.73,53.19) -- (29.99,53.63);
+        \draw [->] (30.87,52.76) -- (30.36,52.04);
+        \draw [->] (31.17,52.85) -- (32,52.31);
+    \end{tikzpicture}
+\end{center}
+Линии напряженности электрического поля проводятся так, чтобы касательная к ним совпадала по направлению с вектором напряженности электрического поля.
+
+Количество линий пропорционально величине напряженности электрического поля. Для подсчета таких линий, возьмем $dS$ - элементарная площадка, $dN$ - количество линий на этой площадке, тогда очевидно: $dN = EdS$, а для подсчета на всей поверхности возьмем поверхностны интеграл:
+
+формула
+
+Произвольный интеграл такого вида называется потоком, то есть для произвольного вектора A поток $\Phi_{A_i}$
+
+формула
+
+\subsection{Теорема Гаусса}
+Формулировка: поток вектора электрического поля через замкнутую поверхность равен алгебраической сумме зарядов, заключенной внутри поверхности и деленному на электрическую постоянную $\epsilon_0$
+
+
+доказательство
+\begin{center}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+        \clip(28.02,50.44) rectangle (34.06,55.52);
+        \draw [line width=1.6pt,color=ffqqqq] (33,41) circle (0.28cm);
+        \draw [color=ffqqqq](32.84,41.36) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (35,41) circle (0.28cm);
+        \draw [color=qqqqff](34.83,41.35) node[anchor=north west] {$-$};
+        \draw [->] (35.28,40.99) -- (36.4,40.97);
+        \draw (35.57,41.79) node[anchor=north west] {$\vec E$};
+        \draw [->] (34.71,40.99) -- (33.69,40.97);
+        \draw (34.19,41.76) node[anchor=north west] {$\vec F$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+        \draw [color=ffqqqq](29,46.2) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+        \draw [color=qqqqff](31.74,46.36) node[anchor=north west] {$-$};
+        \draw (32.93,41.74) node[anchor=north west] {q};
+        \draw (34.81,41.95) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw [line width=1.6pt,color=ffqqqq] (27.96,41) circle (0.28cm);
+        \draw [color=ffqqqq](27.79,41.36) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=ffqqqq] (29.68,41.02) circle (0.28cm);
+        \draw [color=ffqqqq](29.51,41.38) node[anchor=north west] {$+$};
+        \draw [->] (29.96,41) -- (31.24,40.99);
+        \draw (30.4,41.81) node[anchor=north west] {$\vec F$};
+        \draw (30.33,41.06) node[anchor=north west] {$\vec E$};
+        \draw (29.44,42.02) node[anchor=north west] {$q_{\text{пр}}$};
+        \draw (27.9,41.83) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=qqqqff] (28.02,39.04) circle (0.28cm);
+        \draw [color=qqqqff](27.83,39.39) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=qqqqff] (29.69,39.02) circle (0.28cm);
+        \draw [color=qqqqff](29.51,39.37) node[anchor=north west] {$-$};
+        \draw [->] (29.98,39) -- (31.22,39);
+        \draw [line width=1.6pt,color=qqqqff] (33.03,39.02) circle (0.28cm);
+        \draw [color=qqqqff](32.84,39.37) node[anchor=north west] {$-$};
+        \draw [line width=1.6pt,color=ffqqqq] (35,39.03) circle (0.28cm);
+        \draw [color=ffqqqq](34.83,39.39) node[anchor=north west] {$+$};
+        \draw [->] (34.74,39.13) -- (33.63,39.15);
+        \draw [->] (34.75,38.9) -- (33.59,38.88);
+        \draw (30.3,39.84) node[anchor=north west] {$\vec F$};
+        \draw (34.16,39.89) node[anchor=north west] {$\vec F$};
+        \draw (30.28,38.93) node[anchor=north west] {$\vec E$};
+        \draw (34.11,38.91) node[anchor=north west] {$\vec E$};
+        \draw [line width=1.6pt,color=ffqqqq] (28.01,36.06) circle (0.28cm);
+        \draw [color=ffqqqq](27.85,36.41) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (30.96,36.05) circle (0.28cm);
+        \draw [color=qqqqff](30.83,36.46) node[anchor=north west] {$-$};
+        \draw (28.29,36.02)-- (30.68,36.01);
+        \draw [->] (30.68,36.01) -- (29,36.02);
+        \draw (29.51,36.78) node[anchor=north west] {$\vec P$};
+        \draw (29.54,36.1) node[anchor=north west] {$l$};
+        \draw (27.95,39.72) node[anchor=north west] {q};
+        \draw (27.95,36.85) node[anchor=north west] {q};
+        \draw (31.04,36.78) node[anchor=north west] {q};
+        \draw (32.98,39.72) node[anchor=north west] {q};
+        \draw [line width=1.6pt,color=ffqqqq] (28.04,31.02) circle (0.28cm);
+        \draw [color=ffqqqq](27.86,31.38) node[anchor=north west] {$+$};
+        \draw [->] (28.01,31.61) -- (27.99,32.55);
+        \draw [->] (28.42,31.55) -- (29.28,32.33);
+        \draw [->] (28.6,31.19) -- (29.66,31.25);
+        \draw [->] (28.58,30.6) -- (29.54,30.15);
+        \draw [->] (28.2,30.29) -- (28.71,29.58);
+        \draw [->] (27.57,30.25) -- (26.96,29.66);
+        \draw [->] (27.51,30.7) -- (26.45,30.35);
+        \draw [->] (27.4,31.21) -- (26.51,31.73);
+        \draw [line width=1.6pt,color=qqqqff] (31.99,31.14) circle (0.28cm);
+        \draw [color=qqqqff](31.81,31.48) node[anchor=north west] {$-$};
+        \draw [->] (31.96,31.61) -- (31.88,32.49);
+        \draw [->] (31.39,31.39) -- (30.7,31.82);
+        \draw [->] (31.33,30.68) -- (30.48,30);
+        \draw [->] (31.94,30.6) -- (32.21,29.7);
+        \draw [->] (32.45,30.98) -- (33.28,30.58);
+        \draw [->] (32.53,31.51) -- (33.32,32.02);
+        \draw [line width=1.6pt,color=ffqqqq] (36,31) circle (0.28cm);
+        \draw [color=ffqqqq](35.84,31.34) node[anchor=north west] {$+$};
+        \draw [line width=1.6pt,color=qqqqff] (38,31) circle (0.28cm);
+        \draw [color=qqqqff](37.85,31.36) node[anchor=north west] {$-$};
+        \draw [->] (36.28,31.02) -- (37.72,31.02);
+        \draw [->] (35.76,31.16) -- (35.5,31.5);
+        \draw [->] (35.77,30.84) -- (35.47,30.61);
+        \draw [->] (38.68,30.46) -- (38.21,30.81);
+        \draw [->] (38.5,31.5) -- (38.13,31.25);
+        \draw [shift={(37.02,30.3)}] plot[domain=0.83:2.32,variable=\t]({1*1.31*cos(\t r)+0*1.31*sin(\t r)},{0*1.31*cos(\t r)+1*1.31*sin(\t r)});
+        \draw [shift={(36.98,31.65)}] plot[domain=3.95:5.49,variable=\t]({1*1.23*cos(\t r)+0*1.23*sin(\t r)},{0*1.23*cos(\t r)+1*1.23*sin(\t r)});
+        \draw [shift={(36.97,29.37)}] plot[domain=1.16:1.96,variable=\t]({1*1.95*cos(\t r)+0*1.95*sin(\t r)},{0*1.95*cos(\t r)+1*1.95*sin(\t r)});
+        \draw [shift={(36.76,33.3)}] plot[domain=4.47:5.1,variable=\t]({1*2.63*cos(\t r)+0*2.63*sin(\t r)},{0*2.63*cos(\t r)+1*2.63*sin(\t r)});
+        \draw [rotate around={0:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.05cm and 0.44cm);
+        \draw [dash pattern=on 1pt off 1pt] (31,53) circle (2cm);
+        \draw [rotate around={90:(31,53)},line width=1.2pt,dash pattern=on 1pt off 1pt] (31,53) ellipse (2.04cm and 0.39cm);
+        \draw [line width=1.6pt,color=ffqqqq] (30.96,53.02) circle (0.28cm);
+        \draw [color=ffqqqq](30.8,53.38) node[anchor=north west] {$+$};
+        \draw [->] (31.13,53.25) -- (32,54);
+        \draw [->] (30.73,53.19) -- (29.99,53.63);
+        \draw [->] (30.87,52.76) -- (30.36,52.04);
+        \draw [->] (31.17,52.85) -- (32,52.31);
+    \end{tikzpicture}
+\end{center}
+
+формула , где D - объем, заключенный внутри поверхности S, $\rho - плотность электрического заряда$
