@@ -1,6 +1,12 @@
 \documentclass[12pt,a4paper]{report}
+
+% Немного поднимает оглавление страниц (добавил потому что варнинг убирает)
+\setlength{\headheight}{14.49998pt}
+
 \input{preamble}
+
 \newcommand {\define}{--- \textbf{Определение:}}
+
 \begin{document}
 
 \begin{titlepage}
@@ -11,9 +17,12 @@
 \end{titlepage}
 \tableofcontents
 
-\input{mechanics.tex}
-\input{dynamics.tex}
-\input{molecule.tex}
-\input{electric.tex}
+\subfile{chapters/mechanics.tex}
+
+\subfile{chapters/dynamics.tex}
+
+\subfile{chapters/molecule.tex}
+
+\subfile{chapters/electric.tex}
 
 \end{document}

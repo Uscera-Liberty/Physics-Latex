@@ -1,3 +1,8 @@
+\documentclass[../main.tex]{subfiles}
+\graphicspath{{\subfix{../images/}}}
+
+\begin{document}
+
 \chapter{Механика}
 \section{Объекты классической механики}
 \begin{itemize}
@@ -312,7 +317,7 @@
                     \[ w = \sqrt{w_x^2 + w_y^2+w_z^2} \]
 
                     \newpage
-                    \section{Краткие сведения из дифференциальной геометрии}
+                    \section{Краткие сведения из дифференциальной геометрии} %TODO: Фиксануть разммер, так как явно что то не то
                     \begin{center}
                         \definecolor{uququq}{rgb}{0.25,0.25,0.25}
                         \definecolor{qqqqff}{rgb}{0,0,1}
@@ -375,7 +380,7 @@
                             \end{scriptsize}
                         \end{tikzpicture}
 
-                        \includegraphics[]{images.jpeg}
+                        \includegraphics[]{img/images.jpeg}
                     \end{center}
                     \vspace{5px}
 
@@ -399,7 +404,7 @@
 
                     \vspace{5px}
 
-                    \textit{$\tau$ выбирают в направлении движения точки, единичный вектор нормали $\vec n$ направлен в сторону вогнутости траектории, а единичный вектор $\vec b$ - би-нормаль направлен так, чтобы $\vec \tau, \vec n, \vec b$ образовывали правую тройку веторов.}
+                    \textit{$\tau$ выбирают в направлении движения точки, единичный вектор нормали $\vec n$ направлен в сторону вогнутости траектории, а единичный вектор $\vec b$ - би-нормаль направлен так, чтобы $\vec \tau, \vec n, \vec b$ образовывали правую тройку векторов.}
 
                     \vspace{5px}
 
@@ -576,7 +581,11 @@
                     \[ \lim_{\Delta \Theta \to 0}  \frac{\sin{\frac{\Delta \Theta}{2}}}{\frac{\Delta \Theta}{2}} \cdot \lim_{\Delta S \to 0} \frac{\Delta \Theta}{\Delta S} \cdot \lim_{\Delta t \to 0} \frac{\Delta S}{\Delta t} \]
                     Так как,
                     \[ \langle \lim_{\Delta \Theta \to 0}  \frac{\sin{\frac{\Delta \Theta}{2}}}{\frac{\Delta \Theta}{2}} \to 1 ; \lim_{\Delta S \to 0} \frac{\Delta \Theta}{\Delta S} \to k; \lim_{\Delta t \to 0} \frac{\Delta S}{\Delta t} \to v \rangle \]
+<<<<<<< HEAD:mechanics.tex
                     \[ k \cdot v = \frac{v}{\rho} \hfill \text{(следует из \hyperref[eq:kriv]{(\ref{eq:kriv})} )}\]
+=======
+                    % \[ k \cdot v = \frac{v}{\rho} \text{\begin{flushright}(следует из \hyperref[eq:kriv]{(\ref{eq:kriv})} )\end{flushright}}\] %TODO!: Чёт не работает, фиксануть
+>>>>>>> 709a60454a4a05e0c33e14606180da56259f649b:chapters/mechanics.tex
 
                     \vspace{5px}
 
@@ -651,7 +660,7 @@
 
           \end{enumerate}
 \end{enumerate}
-\textbf{\textit{!!!Важно : При движении по кривой из v = const не следует, что w=0(например, движение по окружности)}}
+\textbf{\textit{!!!Важно : При движении по кривой из v = const не следует, что w=0(например, движение по окружности)}} %TODO: Фиксануть переполнение
 
 \section{Частные случаи движения точек}
 \subsection{Прямолинейное движение точки}
@@ -659,13 +668,17 @@
 
 \vspace{5px}
 
-Коодинаты на одной из осей всегда будут нулевыми, так движение точки будет описываться с помощью одной координаты. Тогда $ v(t) = \frac{df}{dt}, w =\frac{dv}{dt}$,  а направление вектора скорости соответственно будет определяться по знаку: ( + ) --- в направлении оси,( - ) --- в противоположном направлении.
+Координаты на одной из осей всегда будут нулевыми, так движение точки будет описываться с помощью одной координаты. Тогда $ v(t) = \frac{df}{dt}, w =\frac{dv}{dt}$,  а направление вектора скорости соответственно будет определяться по знаку: ( + ) --- в направлении оси,( - ) --- в противоположном направлении.
 \begin{enumerate}
     \item \textit{равномерное движение} $v - const; x = v \cdot t + x_0 $
     \item \textit{равнопеременное движение} $w - const; w = a$
           $\frac{dv}{dt} = a => v = a \cdot t + C $ где С находится из начального условия $v(0) = v_0$, то есть:
           \[ v = at+v_0\]
+<<<<<<< HEAD:mechanics.tex
           \[ x = \frac{at^2}{2} + v_0t+ C \hfill \text{, где С = $x_0 (x(0) = x_0)$}\] 
+=======
+          %   \[ x = \frac{at^2}{2} + v_0t+ C \text{\begin{flushright} , где С = $x_0 (x(0) = x_0)$ \end{flushright}}\] %TODO!: Фиксануть формул.
+>>>>>>> 709a60454a4a05e0c33e14606180da56259f649b:chapters/mechanics.tex
 \end{enumerate}
 
 \vspace{10px}
@@ -766,7 +779,7 @@
 ---Если связи наложены на координаты и скорости точек,то такие связи называются \textbf{\textit{кинематическими}}. Связи могут быть выражены уравнениями.
 \begin{itemize}
     \item Для геометрической связи: $f_0 = f(x_1,y_1,z_1, \dots , x_n, y_n, z_n)$
-    \item Для кинематической связи: $g_0 = g(x_1,y_1,z_1, \dots , x_n, y_n, z_n, \dot x_1,\dot y_1,\dot z_1, \dots , \dot x_n, \dot y_n,\dot z_n)$
+    \item Для кинематической связи: $g_0 = g(x_1,y_1,z_1, \dots , x_n, y_n, z_n, \dot x_1,\dot y_1,\dot z_1, \dots , \dot x_n, \dot y_n,\dot z_n)$ %TODO: Переполнение hbox
 \end{itemize}
 Это уравнения для системы из n материальных точек.
 
@@ -789,7 +802,7 @@
 
 Итого для описания положения точек A и B нужно 3+2 = 5 независимых координат
 
-Возьмем аналогично точку $ С(x_{С},y_{С},z_{С})$ и добавим две связи : \[ r_{AC} = const, r_{BC} = const \]
+Возьмем аналогично точку $ С(x_{С},y_{С},z_{С})$ и добавим две связи : \[ r_{AC} = const, r_{BC} = const \] %TODO: Инвалид что-го то там
 
 Получим 9 координат и уже 3 связи:
 \[r_{AB} = const\]
@@ -883,7 +896,7 @@
 
 \vspace{5px}
 
-\textbf{Таким образом, эти углы однозначно определяют положение твердого тела в пространстве с помощью координат ($x_A, y_A, z_A, \Theta, \phi, \psi$), где $A(x_A, y_A,z_A)$ - полюс.}
+\textbf{Таким образом, эти углы однозначно определяют положение твердого тела в пространстве с помощью координат ($x_A, y_A, z_A, \Theta, \phi, \psi$), где $A(x_A, y_A,z_A)$ - полюс.} %TODO: Переполнение
 
 
 \section{Простейшие формы движения твердого тела}
@@ -931,7 +944,7 @@
 
 Пример поступательного движения:
 \begin{center}
-    \includegraphics[width=8cm, height=3cm]{postup.jpg}
+    \includegraphics[width=8cm, height=3cm]{img/postup.jpg}
 \end{center}
 Траектории точек одинаковы, просто сдвиг на $r^\prime $, применим операцию дифференцирования к $r(t)$:
 \[ \frac{dr}{dt} = \frac{dr_0}{dt} + \frac{dr^\prime}{dt} = 0 \Rightarrow v_M = v_A\]
@@ -1000,7 +1013,7 @@ $\phi(t) $ - функция определяющая положение тела
 \vspace{5px}
 
 Получаем :
-\[ \vec w = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] = [\vec \epsilon, \vec r] + [\vec \omega, \vec v]  = [\vec \epsilon, \vec r] + [\omega, [\omega,r]] \text{ ,где $ [\vec \epsilon, \vec r] = w_\tau $ , а  $[\omega, [\omega,r]] = w_n$}\]
+\[ \vec w = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] = [\vec \epsilon, \vec r] + [\vec \omega, \vec v]  = [\vec \epsilon, \vec r] + [\omega, [\omega,r]] \text{ ,где $ [\vec \epsilon, \vec r] = w_\tau $ , а  $[\omega, [\omega,r]] = w_n$}\] %TODO: Переполнение фиксануть
 
 \subsection{Скорость и ускорение точек абсолютно твердого тела при сложном движении}
 \begin{center}
@@ -1070,7 +1083,7 @@ $\phi(t) $ - функция определяющая положение тела
     -берем модуль поскольку может меняться направление движения (произвольное движение)
 \end{flushright}
 Продифференцируем по t
-\[\vec v_M = \vec v_A + \frac{d\vec a}{dt} \text{ ,где $\frac{d\vec a}{dt} = [\vec \omega, \vec a]$(из вращательного движения)}\]
+\[\vec v_M = \vec v_A + \frac{d\vec a}{dt} \text{ ,где $\frac{d\vec a}{dt} = [\vec \omega, \vec a]$ (из вращательного движения)}\]
 Тогда:
 \[\vec v_m = \vec v_A + [\vec w, \vec a]\]
 
@@ -1184,3 +1197,5 @@ $[\vec w, \vec a]$ - вращательное движение вокруг по
 $[\omega,r] = -v_A$(ортогональная проекция), а соответственно ортогональная составляющая будет перпендикулярна $\omega$.
 
 Тогда : \[ v_M = v_A + [\omega, b] \text{--- винтовое движение} \]
+
+\end{document}
