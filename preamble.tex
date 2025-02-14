@@ -1,6 +1,7 @@
-\usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, mathtools}
 \usepackage{bookmark}
 \usepackage{geometry}
 \usepackage{graphicx}
@@ -22,6 +23,8 @@
     pdfkeywords={Определение, формула, законы, процессы},
 }
 
+\usepackage{indentfirst} % Отступ для первого абзаца
+
 \usepackage{titlesec}
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
@@ -39,9 +42,22 @@
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 
+\newcommand{\deriv}[2]{\frac{\partial #1}{\partial #2}} % Производная
+\renewcommand{\phi}{\varphi} % Переопределение символа phi
+\renewcommand{\epsilon}{\varepsilon} % Переопределение символа epsilon
+
 % Настройка верхнего колонтитула
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\rightmark} % Левый верхний угол: название главы
 \fancyhead[R]{\thepage} % Правый верхний угол: номер страницы
 \renewcommand{\headrulewidth}{0.2pt} % Линия под верхним колонтитулом
+
+%настройка теорем и прочего
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem*{definition}{Определение}
+\newtheorem{example}{Пример}
+\newtheorem{proposition}{Утверждение}
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{lemma}{Лемма}
