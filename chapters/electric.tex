@@ -549,17 +549,24 @@
 \[N = \iint\limits_S \vec E \cdot \vec n \cdot dS \]
 Очевидно, что $\vec E, \vec n$ будут сонаправлены, где $\vec n$ -  нормаь ко всей сфере. Распишем эту формулу:
 \[N = \iint\limits_S \vec E \cdot \vec n \cdot dS = \iint \limits_S \frac{1}{4 \pi \epsilon_0}\frac{q_1 q_2}{r^2} dS = \frac{1}{4 \pi \epsilon_0}\frac{q_1 q_2}{r^2} \iint \limits_S dS = \frac{1}{4 \pi \epsilon_0}\frac{q_1 q_2}{r^2} \cdot 4 \pi r^2 = \frac{q}{\epsilon_0}\]
-Тогда можно сделать вывод, чточисло линий проходящих черех любую замкнутую поверхность: $\frac{q}{\epsilon_0}$
+Тогда можно сделать вывод, что число линий проходящих через любую замкнутую поверхность: $\frac{q}{\epsilon_0}$
 
-В произвольном случае, в котором имеется несколько электрических полей: $\vec E = \sum_{i = 1}^{n} \vec E_i $ получаем:
+В произвольном случае, в котором имеется несколько электрических \linebreak полей: $\vec E = \sum_{i = 1}^{n} \vec E_i $ получаем:
 \[ \oiint\limits_S \vec E \cdot \vec n \, dS = \oiint\limits_S \sum_{i=1}^{n} \vec E_i \cdot \vec n \, dS =
     \sum_{i=1}^{n} \oiint\limits_S \vec E_i \cdot \vec n \, dS = \sum_{i=1}^{n} \frac{q_i}{\epsilon_0} =
-    \frac{1}{\epsilon_0}\sum_{i=1}^{n} q_i \text{где $q_i$ находятся внутри замкнутого контура S} \]
+    \frac{1}{\epsilon_0}\sum_{i=1}^{n} q_i\]
+\begin{center}
+    где $q_i$ находятся внутри замкнутого контура S
+\end{center}
+
 
 Таким образом, теорема Гаусса может быть записана таким образом:
 \[ \oiint\limits_S \vec E \cdot \vec n \,  dS = \frac{1}{\epsilon_0} \sum_{i=1}^{n} q_i\]
-или
+\begin{center}
+    или
+\end{center}
 \[\iint \limits_S \vec E \cdot \vec n \, dS  = \frac{1}{\epsilon_0} \iiint\limits_D \rho_\epsilon \, dV\]
+<<<<<<< HEAD
 где D - объем, заключенный внутри поверхности S, $\rho$ - плотность электрического заряда
 
 
@@ -584,7 +591,7 @@
 \[\Phi_E = \oiint\limits_S \vec E \cdot \vec n dS = \frac{1}{\epsilon_0} \sum_{}^{} q = \frac{1}{\epsilon_0} \sigma \cdot S\]
 
 Второй способ, возьмем тот же цилиндр. Рассмотрим боковую поверхность цилиндра,поверхностный интегрл можно расписать как сумма (формула) нормаль соотвестно к этой поверхности будет перпендикулярно силовым линиям, то есть:
-\[ \iint\limits_S_{бок} \vec E \cdot \vec n dS + 2\iint\limits_S_{осн} \vec E \cdot \vec n dS = 2 E \cdot S\]
+\[ \iint\limits_{S_{бок}} \vec E \cdot \vec n dS + 2\iint\limits_{S_{осн}} \vec E \cdot \vec n dS = 2 E \cdot S\]
 
 формула
 
@@ -605,10 +612,10 @@
 \[\Phi_E = \oiint\limits_S \vec E \cdot \vec n ds = \frac{1}{\epsilon_0} 2 \pi R l \cdot \sigma \]
 И разобьем на боковые поверхности соотвественно:
 На основаниях нормаль будет перпендикурляно заряду, а соответственно нормали н абоковой поверхности будут сонаправлены векторам силового поля, то есть получаем:
-\[\oiint\limits_S \vec E \cdot \vec n ds = \iint\limits_S_{бок} \vec E \cdot \vec n dS + 2\iint\limits_S_{осн} \vec E \cdot \vec n dS = E \iint\]
+\[\oiint\limits_S \vec E \cdot \vec n ds = \iint\limits_{S_{бок}} \vec E \cdot \vec n dS + 2\iint\limits_{S_{осн}} \vec E \cdot \vec n dS = E \iint\]
 
 Тогда сопоставля два способа получаем(r - расстояние от оси цилиндра):
-\[\fr\]
+
 Формула выше справдлива только для случая когда $r > R$, при $r < R \Rightarrow E = 0$. $r >> R$ в этом случае мы переходим от поверхностной плотности зарядя к линейной.Итак $\lambda = \sigma \cdot 2\pi R$, подставим:
 
 \[ E = \frac{\lambda}{2\pi \epsilon_0 r}\]
@@ -657,5 +664,9 @@
 
 Из механики, мы знаем что работа
 формула
+
+\begin{center}
+    где D - объем, заключенный внутри поверхности S,\linebreak $\rho$ - плотность электрического заряда
+\end{center}
 
 \end{document}
