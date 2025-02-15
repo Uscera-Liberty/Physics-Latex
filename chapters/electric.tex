@@ -566,107 +566,471 @@
     или
 \end{center}
 \[\iint \limits_S \vec E \cdot \vec n \, dS  = \frac{1}{\epsilon_0} \iiint\limits_D \rho_\epsilon \, dV\]
-<<<<<<< HEAD
-где D - объем, заключенный внутри поверхности S, $\rho$ - плотность электрического заряда
+\begin{center}
+    где D - объем, заключенный внутри поверхности S,\linebreak $\rho$ - плотность электрического заряда
+\end{center}
 
+\define Объемная плотность заряда $\rho_q$ - общий заряд который имеется в объеме деленный на объем, то есть заряд в единице объема. 
+Как правило распределена нераавномерно.Для того чтобы получить заряд в точке уменьшаем объем до точки, то есть делаем бесконечно малый объем.
 
-Плотность заряда $\rho$
+\[ \rho_q(x,y,x) = \lim_{\Delta V \to 0} \frac{\Delta q}{\Delta V}\]
 
-Объемная плотность заряда $\rho_q$ - общий заряд который имеется в объеме деленный на объем, то есть заряд в единице объема. Для того чтобы получить заряд в точке уменьшаем объем до точки, то есть делаем бесконечно малый объем.
-\[ \rho_q(x,y,x) = \lim_{\Delta x \to 0} \frac{\Delta q}{\Delta V}\]
+Поверхностная плотность заряда - средний заряд на единицу площади поверхности. 
+
 формула
-Поверхностная плотность заряда - то есть на плоскости
-формула
+
 Линейная плотность заряда  - собсвенно на линии, когда площадь стремится к нулю соотвественно.
 
 формула
 
-1.Поле бесконечно однородно заряженной плоскости
-1.рисунок
-
+\subsection{Поле бесконечно однородно заряженной плоскости}
+\begin{center}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(27.04,62.43) rectangle (34.53,67.4);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.04,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=ffttqq] (29,67)-- (29,63);
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.11,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.13,67.28) node[anchor=north west] {$- \sigma$};
+    \end{tikzpicture}
+\end{center}
 Пусть есть заряд $\sigma$ в некотором поле. Рассмотрим линии напряженности: силу симметрии линии напряженности будут перпендикулярны плоскости, с плюсом от нее и с минусом к ней соотвественно.
 Воспользуемся теоремой гаусса для определения напряженности этого поля.Выделим замкнутую поверхность: выделим цилиндр с площадью основы S, посчитаем поток через эту цилиндрическую поверхность:
+\begin{center}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(24.1,85.59) rectangle (32.42,94.37);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=ffttqq] (29,67)-- (29,63);
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [line width=2pt,color=ffttqq] (28,94)-- (28,86);
+    \draw [line width=0.4pt,dash pattern=on 2pt off 2pt] (26,91)-- (30,91);
+    \draw [line width=0.4pt,dash pattern=on 2pt off 2pt] (26,89)-- (30,89);
+    \draw [rotate around={90:(26,90)},dash pattern=on 2pt off 2pt] (26,90) ellipse (1.02cm and 0.22cm);
+    \draw [rotate around={90:(30,90)},dash pattern=on 2pt off 2pt] (30,90) ellipse (1.02cm and 0.21cm);
+    \draw [->] (30,90) -- (31.38,90.01);
+    \draw [->] (26,90) -- (24.55,89.99);
+    \draw [->] (28,87) -- (30,87);
+    \draw [->] (28,87) -- (26,87);
+    \draw [->] (28,93) -- (30,93);
+    \draw [->] (28,93) -- (26,93);
+    \draw [->] (29,91) -- (29,92);
+    \draw [->] (29,89) -- (29,88);
+    \draw [rotate around={90:(28,90)},dash pattern=on 2pt off 2pt] (28,90) ellipse (1.03cm and 0.24cm);
+    \draw (27.76,90.34) node[anchor=north west] {$S$};
+    \draw (28.04,94.12) node[anchor=north west] {$+ \sigma$};
+    \draw (30.58,90.54) node[anchor=north west] {$\vec n$};
+    \draw (29.06,91.81) node[anchor=north west] {$\vec n$};
+    \draw (25.06,90.55) node[anchor=north west] {$\vec n$};
+    \draw (29.13,88.83) node[anchor=north west] {$\vec n$};
+    \draw (28.13,87.61) node[anchor=north west] {$\vec E$};
+    \draw (29.14,88.48) node[anchor=north west] {$\vec E \cdot \vec n = 0$};
+    \end{tikzpicture}
+\end{center}
+
 формула
-Первый способ с помощью физических соображений:
-\[\Phi_E = \oiint\limits_S \vec E \cdot \vec n dS = \frac{1}{\epsilon_0} \sum_{}^{} q = \frac{1}{\epsilon_0} \sigma \cdot S\]
+Первый способ, из физических соображений, используя формулу потока:
+\[ \Phi_E = \oiint\limits_S \vec E \cdot \vec n dS = \frac{1}{\epsilon_0} \sum_{}^{} q 
+= \frac{1}{\epsilon_0} \sigma \cdot S \]
 
-Второй способ, возьмем тот же цилиндр. Рассмотрим боковую поверхность цилиндра,поверхностный интегрл можно расписать как сумма (формула) нормаль соотвестно к этой поверхности будет перпендикулярно силовым линиям, то есть:
-\[ \iint\limits_{S_{бок}} \vec E \cdot \vec n dS + 2\iint\limits_{S_{осн}} \vec E \cdot \vec n dS = 2 E \cdot S\]
+Второй способ, возьмем тот же цилиндр. Рассмотрим боковую поверхность цилиндра, поверхностный интеграл можно расписать как сумму соотвенно поверхностных интегралов по боковой поверхности и по основаниям. 
+Заметим, что нормаль к боковой поверхности будет перпендикулярно силовым линиям, то есть:
+\[ \oiint\limits_S \vec E \cdot \vec n dS = \iint\limits_{S_{\text{бок}}} \vec E \cdot \vec n dS + 2\iint\limits_{S_{\text{осн}}} \vec E \cdot \vec n dS 
+= 2 E \cdot S \]
 
 формула
 
-Получается, можно приравнять, потому что мы считаем одну и ту же площадь одно и того тела разными способами, то есть:
-\[E = \frac{\sigma}{2 \epsilon_0}\]
+Получается, можно приравнять, потому что мы считаем одну и ту же площадь одно и того же тела разными способами, то есть:
+\[\frac{1}{\epsilon_0} \sigma S = 2 \cdot E \cdot S \Rightarrow E = \frac{\sigma}{2 \epsilon_0}\]
 рисунок
+В реальности не существует бесконечной пластины, а у конечной пластины линии напряженности таковы:
+\begin{center}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(25.66,86.82) rectangle (30.45,93.45);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=ffttqq] (29,67)-- (29,63);
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [line width=2pt,color=ffttqq] (28,93)-- (28,87);
+    \draw [rotate around={90:(28,90)},dash pattern=on 1pt off 1pt] (28,90) ellipse (1.02cm and 0.21cm);
+    \draw [shift={(28,93.5)}] plot[domain=3.79:5.64,variable=\t]({1*2.5*cos(\t r)+0*2.5*sin(\t r)},{0*2.5*cos(\t r)+1*2.5*sin(\t r)});
+    \draw (26,90)-- (30,90);
+    \draw [shift={(28,86.5)}] plot[domain=0.64:2.5,variable=\t]({1*2.5*cos(\t r)+0*2.5*sin(\t r)},{0*2.5*cos(\t r)+1*2.5*sin(\t r)});
+    \draw [shift={(28,93)}] plot[domain=-3.14:0,variable=\t]({1*1*cos(\t r)+0*1*sin(\t r)},{0*1*cos(\t r)+1*1*sin(\t r)});
+    \draw [shift={(28,87)}] plot[domain=0:3.14,variable=\t]({1*1*cos(\t r)+0*1*sin(\t r)},{0*1*cos(\t r)+1*1*sin(\t r)});
+    \end{tikzpicture}
+\end{center}
+\subsection{Электрическое поле двух разноименно заряженных плоскостей}
+\begin{center}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(24.82,85.73) rectangle (32.76,92.3);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=ffttqq] (29,67)-- (29,63);
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [line width=2pt,color=ffttqq] (26,92)-- (26,86);
+    \draw [line width=2.4pt,color=qqttcc] (31,92)-- (31,86);
+    \draw (26.25,92.27) node[anchor=north west] {$+ \sigma$};
+    \draw (31.2,92.32) node[anchor=north west] {$- \sigma$};
+    \draw [->] (26,91) -- (25,91);
+    \draw [->] (26.04,89) -- (25,89);
+    \draw [->] (26.04,87) -- (25,87);
+    \draw [->] (32.08,91.64) -- (31.04,91.64);
+    \draw [->] (32.04,89.89) -- (31.03,89.85);
+    \draw [->] (26,91) -- (32,91);
+    \draw [->] (32,88) -- (31,88);
+    \draw [->] (26,89) -- (32,89);
+    \draw [->] (26,87) -- (32,87);
+    \draw [color=ffttqq](25.27,91.64) node[anchor=north west] {$\vec E_1$};
+    \draw [color=ffttqq](25.29,89.66) node[anchor=north west] {$\vec E_1$};
+    \draw [color=ffttqq](25.34,87.71) node[anchor=north west] {$\vec E_1$};
+    \draw [->] (25,91.65) -- (31.04,91.64);
+    \draw [->] (24.99,89.87) -- (31.03,89.85);
+    \draw [->] (24.96,88.01) -- (31,88);
+    \draw [color=qqttcc](30.12,92.24) node[anchor=north west] {$\vec E_2$};
+    \draw [color=qqttcc](30.15,90.5) node[anchor=north west] {$\vec E_2$};
+    \draw [color=qqttcc](30.19,88.75) node[anchor=north west] {$\vec E_2$};
+    \draw (25.25,86.85) node[anchor=north west] {$I$};
+    \draw (28.02,86.85) node[anchor=north west] {$II$};
+    \draw (31.08,86.85) node[anchor=north west] {$III$};
+    \end{tikzpicture}
 
-2.Электрическое поле двух разноименно заряженных плоскостей.
-рисунок
-ИЗ геометрических соображений получаем, что поле будет сосредоточено только между этими плоскостями: $I, III : E = 0; II = \frac{\sigma}{epsilon_0}$. Причем такое поле однородно и направленно в одну сторону.
+\end{center}
+Из геометрических соображений получаем, что поле будет сосредоточено только между этими плоскостями: $I, III : E = 0; II = \frac{\sigma}{epsilon_0}$. Причем такое поле однородно и направленно в одну сторону.
+\subsection{Поле бесконечного однородно заряженного цилиндра}
+\begin{center}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(23.81,85.51) rectangle (32.28,92.21);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=ffttqq] (29,67)-- (29,63);
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw (23.75,86.91)-- (29.75,91.91);
+    \draw (26.55,85.9)-- (31,90);
+    \draw [line width=1.2pt,dash pattern=on 1pt off 1pt] (24.1,85.49)-- (31.37,91.81);
+    \draw(27.99,88.88) circle (1.21cm);
+    \draw (23.85,86.08) node[anchor=north west] {\textit{вообще это бесконечный цилиндр,думайте}};
+    \draw [->] (27.99,88.88) -- (30,87);
+    \draw [->] (29.26,88.4) -- (29.99,87.78);
+    \draw [->] (29.96,89.04) -- (30.79,88.34);
+    \draw [->] (30.63,89.65) -- (31.5,88.95);
+    \draw (29.56,91.92) node[anchor=north west] {$\sigma$};
+    \draw (30.69,90.25) node[anchor=north west] {$\sigma$};
+    \draw (28.46,89.4) node[anchor=north west] {$R$};
+    \draw (29.17,88.25) node[anchor=north west] {$\vec r$};
+    \draw (29.64,88.69) node[anchor=north west] {$\vec E$};
+    \draw (30.45,89.28) node[anchor=north west] {$\vec E$};
+    \draw (31.1,89.83) node[anchor=north west] {$\vec E$};
+    \end{tikzpicture}
+\end{center}
 
-2. Поле бесконечного однородно заряженного цилиндра
-рисунок
-По поверхности цилиндра распределен заряд с плотностью $\sigma$, в силу симметрии наши линии напряженности напряженности будут перпендикулярны поверхности цилиндра.
-Возьмем некоторую точку, и пусть расстояние до нее от цилиндра r.Поступим аналогично: применим теорему гаусса, возмем замкнутутю поверхность в виде цилиндра который окружает наш цилиндр и посчитаем повехностные интегралы:
+По поверхности цилиндра распределен заряд с плотностью $\sigma$, в силу симметрии наши линии напряженности будут перпендикулярны поверхности цилиндра.
+Возьмем некоторую точку, и пусть расстояние до нее от цилиндра r. Поступим аналогично: применим теорему гаусса, возмем замкнутутю поверхность в виде цилиндра который окружает наш цилиндр и посчитаем повехностные интегралы:
+\begin{center}
+    \definecolor{qqzzqq}{rgb}{0,0.6,0}
+    \definecolor{fftttt}{rgb}{1,0.2,0.2}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(24.18,85.53) rectangle (32.29,91.39);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [color=fftttt] (26,88)-- (29,90);
+    \draw [color=fftttt] (27,87)-- (30,89);
+    \draw [rotate around={-48.83:(28.02,88.51)},line width=1.6pt,color=fftttt] (28.02,88.51) ellipse (0.73cm and 0.22cm);
+    \draw [line width=1pt,dash pattern=on 1pt off 2pt] (29.52,91.17)-- (24.81,88.12);
+    \draw [line width=1pt,dash pattern=on 1pt off 2pt] (31.67,88.78)-- (26.89,85.67);
+    \draw [rotate around={-49.63:(25.85,86.89)},line width=1pt,dash pattern=on 1pt off 2pt] (25.85,86.89) ellipse (1.63cm and 0.26cm);
+    \draw [rotate around={-47.98:(30.6,89.97)},line width=1pt,dash pattern=on 1pt off 2pt] (30.6,89.97) ellipse (1.63cm and 0.29cm);
+    \draw [->] (26.21,89.03) -- (25.34,90.17);
+    \draw [->] (25.8,86.87) -- (24.53,85.99);
+    \draw [->] (30.53,90) -- (31.75,91.04);
+    \draw [->] (26.67,89.33) -- (25.66,90.54);
+    \draw [rotate around={-48.67:(28.13,88.37)},line width=1pt,dash pattern=on 1pt off 2pt] (28.13,88.37) ellipse (1.65cm and 0.38cm);
+    \draw [->,color=qqzzqq] (28,88.54) -- (29.19,87.16);
+    \draw [->,color=fftttt] (28,88.54) -- (27.56,89.04);
+    \draw [color=fftttt](27.04,88.71) node[anchor=north west] {$R$};
+    \draw [color=qqzzqq](28.76,88.1) node[anchor=north west] {$\vec r$};
+    \draw (25.91,89.79) node[anchor=north west] {$\vec n$};
+    \draw (24.69,86.74) node[anchor=north west] {$\vec n$};
+    \draw (31.35,90.63) node[anchor=north west] {$\vec n$};
+    \draw (26.38,90.2) node[anchor=north west] {$\vec E$};
+    \end{tikzpicture}
+\end{center}
 
 Рассматриваем поток сквозь этот цилиндр:
 \[\Phi_E = \oiint\limits_S \vec E \cdot \vec n ds = \frac{1}{\epsilon_0} 2 \pi R l \cdot \sigma \]
-И разобьем на боковые поверхности соотвественно:
-На основаниях нормаль будет перпендикурляно заряду, а соответственно нормали н абоковой поверхности будут сонаправлены векторам силового поля, то есть получаем:
+
+И разобьем на поверхности соотвественно: на основаниях нормаль будет перпендикурляно заряду, а соответственно нормали н абоковой поверхности будут сонаправлены векторам силового поля, то есть получаем:
+
 \[\oiint\limits_S \vec E \cdot \vec n ds = \iint\limits_{S_{бок}} \vec E \cdot \vec n dS + 2\iint\limits_{S_{осн}} \vec E \cdot \vec n dS = E \iint\]
 
 Тогда сопоставля два способа получаем(r - расстояние от оси цилиндра):
+формула итог 
 
 Формула выше справдлива только для случая когда $r > R$, при $r < R \Rightarrow E = 0$. $r >> R$ в этом случае мы переходим от поверхностной плотности зарядя к линейной.Итак $\lambda = \sigma \cdot 2\pi R$, подставим:
 
 \[ E = \frac{\lambda}{2\pi \epsilon_0 r}\]
 
-3. Сферически однородно заряженная поверхность
-рисунок
+\subsection{Сферически однородно заряженная поверхность}
+\begin{center}
+    \definecolor{ffttqq}{rgb}{1,0.2,0}
+    \definecolor{qqwwqq}{rgb}{0,0.4,0}
+    \definecolor{fftttt}{rgb}{1,0.2,0.2}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(22.43,84.42) rectangle (31.77,93.62);
+    \draw [color=fftttt,fill=fftttt,fill opacity=0.1] (27,89) circle (2.64cm);
+    \draw [line width=1pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [line width=1pt,dash pattern=on 1pt off 2pt] (27,89) circle (3.76cm);
+    \draw [rotate around={0:(27.01,89.01)},line width=1pt,dash pattern=on 1pt off 2pt] (27.01,89.01) ellipse (3.74cm and 0.63cm);
+    \draw [rotate around={-0.28:(27,88.97)},color=fftttt,fill=fftttt,fill opacity=0.15] (27,88.97) ellipse (2.68cm and 0.45cm);
+    \draw [->] (27,89) -- (29.68,88.96);
+    \draw (28.1,89.41) node[anchor=north west] {$R$};
+    \draw (27.75,91.48) node[anchor=north west] {$+ \sigma$};
+    \draw [->,color=qqwwqq] (27,89) -- (24.35,91.66);
+    \draw [->,color=ffttqq] (28.99,90.74) -- (29.7,91.22);
+    \draw [->,color=ffttqq] (27.76,86.47) -- (27.98,85.73);
+    \draw [->,color=ffttqq] (24.64,87.81) -- (23.87,87.37);
+    \draw (29.06,91.51) node[anchor=north west] {$\vec E$};
+    \draw (24,88.16) node[anchor=north west] {$\vec E$};
+    \draw (27.97,86.53) node[anchor=north west] {$\vec E$};
+    \draw [color=qqwwqq](24.91,91.54) node[anchor=north west] {$\vec r$};
+    \end{tikzpicture}
+\end{center}
 
-Линии напряженности будут перпендикулярны поверхности сферы.По аналогии с предыдущими доказательствами, возьмем сферу окружающую нашу сферу и прменим теорему Гаусса:
+Линии напряженности будут перпендикулярны поверхности сферы.
+По аналогии с предыдущими доказательствами, возьмем сферу окружающую нашу сферу и применим теорему Гаусса:
 \[\Phi_E = \oiint\]
-формула
-В случае сферы, мы можем посчитать общий заряд на сфере и он будет равен:
-
-\[\]
-
-Послденее используют только когда r >> R. Напряженность поля точечного заряда совпадает с этой формулой.
-
-Работа сил электростатического поле.
-
-Рассмотрим два заряда, заряд создающий поле соотвественно и пробный заряд произвольно движущий в этом поле. Нужно посчитать работу по перемещению этого заряда в поле.
-Заметим, что действие силы поля напомнинает действие центральной силы, а именно что вектор силы будет на одной линии с неподвижной точкой, к тому же любая центральная сила консервативна и тогда переделы интегрирования будут определяться радиус векторами от первой точки  и от второй соотвественно:
 
 формула
 
-рисунок
+Или можно посчитать с помощью формулы площади поверхности сферы:
+
+формула
+
+При этом сфера замкнута и мы можем посчитать общий заряд на сфере и он будет равен:
+
+формула
+И тогда при $r > R$:
+
+Формула
+
+Заметим, что напряженность поля точечного заряда совпадает с этой формулой.
+
+\subsection{Работа сил электростатического поле}
+
+Рассмотрим два заряда: заряд создающий поле соотвественно и пробный заряд,произвольно движущийся в этом поле. Нужно посчитать работу по перемещению этого заряда в поле.
+
+Заметим, что действие силы поля напомнинает действие центральной силы, а именно что вектор силы будет на одной линии с неподвижной точкой, к тому же любая центральная сила консервативна и тогда переделы интегрирования будут определяться радиус векторами от начальной $q_0$ до первой точки и до второй соотвественно:
+
+\begin{center}
+    \definecolor{qqwwqq}{rgb}{0,0.4,0}
+    \definecolor{qqttcc}{rgb}{0,0.2,0.8}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(22.52,87.6) rectangle (30.35,92.61);
+    \draw [line width=1.6pt,color=ffqqqq] (29.17,45.85) circle (0.28cm);
+    \draw [color=ffqqqq](29.03,46.11) node[anchor=north west] {$+$};
+    \draw [line width=1.6pt,color=qqqqff] (31.87,45.96) circle (0.28cm);
+    \draw [color=qqqqff](31.63,46.24) node[anchor=north west] {$-$};
+    \draw [line width=1.6pt,color=qqttcc] (32,67)-- (32,63);
+    \draw [->] (29,66.64) -- (30.26,66.62);
+    \draw [->] (29.03,64) -- (30.29,63.98);
+    \draw [->] (29.04,65.3) -- (30.3,65.28);
+    \draw [->] (30.69,66.61) -- (31.96,66.6);
+    \draw [->] (30.71,65.31) -- (31.97,65.3);
+    \draw [->] (30.74,64.01) -- (32,64);
+    \draw [->] (29,66.64) -- (27.87,66.64);
+    \draw [->] (28.99,65.31) -- (27.86,65.31);
+    \draw [->] (28.96,64) -- (27.83,64);
+    \draw [->] (33.08,66.6) -- (31.96,66.6);
+    \draw [->] (33.1,65.3) -- (31.97,65.3);
+    \draw [->] (33.13,64) -- (32,64);
+    \draw (29.1,67.33) node[anchor=north west] {$+ \sigma $};
+    \draw (32.12,67.28) node[anchor=north west] {$- \sigma$};
+    \draw [shift={(25.57,94.32)}] plot[domain=4.11:5.03,variable=\t]({1*3.35*cos(\t r)+0*3.35*sin(\t r)},{0*3.35*cos(\t r)+1*3.35*sin(\t r)});
+    \draw [shift={(26.51,87.81)}] plot[domain=0.72:1.54,variable=\t]({1*3.32*cos(\t r)+0*3.32*sin(\t r)},{0*3.32*cos(\t r)+1*3.32*sin(\t r)});
+    \draw [->,dash pattern=on 1pt off 2pt] (25,88.53) -- (23.66,91.56);
+    \draw [->,dash pattern=on 1pt off 2pt] (25,88.53) -- (29,90);
+    \draw (23.48,91.59) node[anchor=north west] {$1$};
+    \draw (28.9,89.96) node[anchor=north west] {$2$};
+    \draw (23.61,92.07) node[anchor=north west] {$q$};
+    \draw [->,color=qqwwqq] (23.66,91.56) -- (23.37,92.32);
+    \draw [->,color=qqwwqq] (29,90) -- (29.8,90.29);
+    \draw [color=qqwwqq](23.01,91.86) node[anchor=north west] {$\vec F$};
+    \draw [color=qqwwqq](29.38,90.21) node[anchor=north west] {$\vec F$};
+    \draw (24.82,88.53) node[anchor=north west] {$q_0$};
+    \draw (24.32,90.56) node[anchor=north west] {$r_1$};
+    \draw (27.13,89.87) node[anchor=north west] {$r_2$};
+    \end{tikzpicture}
+\end{center}
+формула 
+Соответсвенно, если $r_1 = r_2$, то А = 0. При этом не обязательно что это будет одна и та же точка, главное чтобы радиус векторы совпадали по длине.
 Рассмотрим замнутую дугу, то есть контур:
 
 формула
 
-Так как наш сила консервативная, то можем ввести понятие потенциальной энергии, то есть: формула (w1 -w2), то есть потенциальная энергия поля
+Так как наш сила консервативная, то можем ввести понятие потенциальной энергии, то есть: 
 
 формула
 
-Для того чтобы посчитать эту энергию, нужно взять точку в которой потенциальная энергия равна нулю, а именно можно взять точку расстоние от которой приближается к бесконечности:
+формула 
+
+Для того чтобы посчитать эту энергию, нужно взять точку в которой потенциальная энергия равна нулю, а именно можно взять точку расстоние от которой приближается к бесконечности.
+Тогда для нее $W \to 0$ при $r \to \inf$ получим что $C = 0$: 
 
 формула
 
-Потенциальную энергию поле не принято считать характеристикой этого поля, посокльку зависит от заряда помещенного в это поле. Тогда рассматривают величину потенциальной энергии деленное на величину заряда помещенное в это поле.
+Потенциальную энергию поле не принято считать характеристикой этого поля, посокльку зависит от заряда помещенного в это поле. 
+Тогда рассматривают величину потенциальной энергии деленное на величину заряда помещенное в это поле - она и будет являться характеристикой этого поля.
 
-Потенциалом электрического поле называется величина равная отношению потенциальной энергии заряженной частицы к величине этого заряда.
-
-формула
-
-Если есть несколько частиц с потенциалами соотвественно формула , то общий потенциал равен сумме этих потенциалов:
+\define \textbf{Потенциалом электрического поля} называется величина равная отношению потенциальной энергии заряженной частицы к величине этого заряда.
 
 формула
 
-Из механики, мы знаем что работа
+Если есть несколько частиц с потенциалами соотвественно $\phi_1, \phi_2 \ldots \phi_n$, то общий потенциал равен сумме этих потенциалов:
+
 формула
 
-\begin{center}
-    где D - объем, заключенный внутри поверхности S,\linebreak $\rho$ - плотность электрического заряда
-\end{center}
+\define Величину $A = W_1 - W_2 = q\phi_1 - q\phi_2 = q(\phi_1 - \phi_2) = q\Delta \phi$ называют разностью потенциалов.
 
 \end{document}
