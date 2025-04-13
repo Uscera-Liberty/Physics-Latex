@@ -265,8 +265,8 @@ $\xi_i$ - энергия отдельной молекулы, $\bar v_i$ - ск�
 
 \vspace{6px}
 
-$<\epsilon> - $ \textbf{средняя энергия одной молекулы}:
-\[ <\epsilon> = \frac{E}{N} = \frac{1}{N} \sum_{i = 1}^N \frac{m \bar v_i^2}{2} \]
+$<\varepsilon> - $ \textbf{средняя энергия одной молекулы}:
+\[ <\varepsilon> = \frac{E}{N} = \frac{1}{N} \sum_{i = 1}^N \frac{m \bar v_i^2}{2} \]
 Если рассматриваем однородный газ:
 \[ \frac{1}{N} \cdot \frac{m}{2} \sum_{i = 1}^N {\bar v_i^2} = \frac{m}{2} \sum_{i = 1}^N \frac{\bar v_i^2}{N} = \frac{m}{2} \langle v^2 \rangle\]
 где $\sum_{i = 1}^N \frac{\bar v_i^2}{N}$ - средний квадрат скорости
@@ -280,7 +280,7 @@ $v_{sr} = \sqrt{\langle v^2 \rangle}$ - \textbf{среднеквадратичн
 \vspace{6px}
 \begin{itemize}
     \item Макропараметры: $P, T ,\nu$
-    \item Микропараметры $\epsilon, v_sr$
+    \item Микропараметры $\varepsilon, v_sr$
 \end{itemize}
 
 \begin{enumerate}
@@ -315,20 +315,20 @@ $v_{sr} = \sqrt{\langle v^2 \rangle}$ - \textbf{среднеквадратичн
 \[ P = \frac{1}{3}nmv^2\]
 
 Так как $n = \frac{N}{V}$ и $v^2 = \frac{1}{N}\sum_{i = 1}^N {v_i^2} \Rightarrow$
-\[ m \cdot v^2 = \frac{2}{N}\sum_{i = 1}^N \frac{mv_i^2}{2} = 2<\epsilon> \Rightarrow \]
-\[ P = \frac{2}{3}n<\epsilon>\]
+\[ m \cdot v^2 = \frac{2}{N}\sum_{i = 1}^N \frac{mv_i^2}{2} = 2<\varepsilon> \Rightarrow \]
+\[ P = \frac{2}{3}n<\varepsilon>\]
 - \textit{\textbf{основное уравнения МКТ}}
 
 \vspace{5px}
 
 Домножим последнее уравнение на объем:
-\[ PV = \frac{2}{3}V \cdot n <\epsilon> \Rightarrow PV = \frac{2}{3}U \]
+\[ PV = \frac{2}{3}V \cdot n <\varepsilon> \Rightarrow PV = \frac{2}{3}U \]
 где $V \cdot n $ - общее число молекул N, а $U$ - внутренняя энергия молекул газа. По уравнению Менделеева-Клайперона получим:
 \[ \nu R T = \frac{2}{3} U \Rightarrow U = \frac{3}{2} \nu R T\]
 Рассмотрим эту формулу для одного киломоля: $ E = \frac{3}{2}RT$, здесь можно заметить что \underline{температура есть мера внутренней энергии молекул газа.}
 
 В таком виде можем применить закон Авогадро:
-\[ N_A \cdot <\epsilon> = \frac{3}{2}RT \Rightarrow <\epsilon> = \frac{3}{2}kT \]
+\[ N_A \cdot <\varepsilon> = \frac{3}{2}RT \Rightarrow <\varepsilon> = \frac{3}{2}kT \]
 \[ k = \frac{R}{N_A} \]
 \[ k = 1,38 \cdot 10^{-23} \frac{\text{Дж}}{\text{К}} \text{   --- \textbf{\textit{постоянная Больцмана.}}}\]
 
@@ -420,13 +420,13 @@ $v_{sr} = \sqrt{\langle v^2 \rangle}$ - \textbf{среднеквадратичн
 \vspace{4px}
 
 Рассмотрим среднюю энергию молекулы:
-\[ <\epsilon> = \frac{3}{2}kT \]
-\[<\epsilon> = <\epsilon_x>+<\epsilon_y>+<\epsilon_z> = \frac{1}{2}kT + \frac{1}{2}kT+ \frac{1}{2}kT = \frac{3}{2}kT\]
+\[ <\varepsilon> = \frac{3}{2}kT \]
+\[<\varepsilon> = <\varepsilon_x>+<\varepsilon_y>+<\varepsilon_z> = \frac{1}{2}kT + \frac{1}{2}kT+ \frac{1}{2}kT = \frac{3}{2}kT\]
 
 Заметим, что \textit{поступательное движение может перейти во вращательное}, тем самым следует что на каждую степень \textit{свободы приходится одно и то же количество энергии}. Так, у двухатомной молекулы 5 степеней свободы( по Х,У,Z, и еще 2 вращательных направления), получаем
-\[<\epsilon> = 3<\epsilon_{post}>+ 2<\epsilon_{vr}> = \frac{5}{2}kT\]
+\[<\varepsilon> = 3<\varepsilon_{post}>+ 2<\varepsilon_{vr}> = \frac{5}{2}kT\]
 Соответственно для трехатомного газа:
-\[<\epsilon> = 3<\epsilon_{post}>+ 3<\epsilon_{vr}> = \frac{6}{2}kT\]
+\[<\varepsilon> = 3<\varepsilon_{post}>+ 3<\varepsilon_{vr}> = \frac{6}{2}kT\]
 
 \vspace{5px}
 
@@ -1010,13 +1010,13 @@ $v_{sr} = \sqrt{\langle v^2 \rangle}$ - \textbf{среднеквадратичн
 Изменения количества молекул соответственно:
 \[\Delta N = \frac{1}{6}nUS\Delta t\]
 Примем то, что U - значение не значащее и следовательно не меняющееся. Как известно из \textit{основного уравнения МКТ} следует:
-\[<\epsilon_1> = \frac{3}{2}kT_1 \Rightarrow \Delta Q_1 = \Delta N \cdot <\epsilon_1>\]
-\[<\epsilon_2> = \frac{3}{2}kT_2 \Rightarrow \Delta Q_2 = \Delta N \cdot <\epsilon_2>\]
+\[<\varepsilon_1> = \frac{3}{2}kT_1 \Rightarrow \Delta Q_1 = \Delta N \cdot <\varepsilon_1>\]
+\[<\varepsilon_2> = \frac{3}{2}kT_2 \Rightarrow \Delta Q_2 = \Delta N \cdot <\varepsilon_2>\]
 
 Тогда вычислим изменения количества теплоты в первом слое:
-\[ \Delta Q ^{I} = -\Delta Q_1 + \Delta Q_2 = \Delta N(<\epsilon_2> - <\epsilon_1>)\]
+\[ \Delta Q ^{I} = -\Delta Q_1 + \Delta Q_2 = \Delta N(<\varepsilon_2> - <\varepsilon_1>)\]
 
-Подставляя $\Delta N = \frac{1}{6}nUS\Delta t,<\epsilon> = \frac{3}{2}kT $ получим:
+Подставляя $\Delta N = \frac{1}{6}nUS\Delta t,<\varepsilon> = \frac{3}{2}kT $ получим:
 \[\Delta Q ^{I} = \frac{1}{6}nUS\Delta t\frac{3}{2}k(T_2 - T_1)\]
 \[T_1 =T(x) -<l>\frac{dT}{dx}\]
 \[T_2 = T(x) +<l>\frac{dT}{dx}\]

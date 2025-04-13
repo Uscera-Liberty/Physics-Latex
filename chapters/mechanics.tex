@@ -763,11 +763,11 @@
 \[ v(t) = \frac{ds}{dt} = R \cdot \frac{d\phi}{dt}\]
 где $\frac{d\phi}{dt}$ называется \textbf{\textit{угловой скоростью}} и обозначается $\omega (v = R\omega)$
 \[ w_\tau = \frac{dv}{dt} = R \cdot \frac{d^2 \phi}{dt} = R \cdot \frac{dw}{dt} \]
-где  $\frac{dw}{dt}$ называется угловым ускорением и обозначается $\epsilon$
-\[ w_\tau = R \cdot \epsilon \text{ --- \textbf{\textit{касательное ускорение}}} \]
+где  $\frac{dw}{dt}$ называется угловым ускорением и обозначается $\varepsilon$
+\[ w_\tau = R \cdot \varepsilon \text{ --- \textbf{\textit{касательное ускорение}}} \]
 \[w_n = \frac{v^2}{R} = \omega^2 \cdot R \text{ --- \textbf{\textit{нормальное ускорение}}} \]
 \[ \vec w = \vec w_\tau + \vec w_n\]
-\[ w = R \sqrt{w_n^4 + \epsilon^2} \]
+\[ w = R \sqrt{w_n^4 + \varepsilon^2} \]
 \section{Кинематика системы материальных точек и твердого тела}
 \define  На систему материальных точек могут быть наложены ограничения, называемые связями. Для однозначного задания системы из n точек необходимо задать 3n координат.
 
@@ -1009,12 +1009,12 @@ $\phi(t) $ - функция определяющая положение тела
 \[ \omega = \frac{d\phi}{dt} \]
 \[ v = a \cdot \omega = r_M \cdot \sin{\alpha} \cdot \omega \] - причем вектор скорости будет направлен по оси вращения, формулы можем записать вектор скорости как $\vec v = [\omega, r] => \frac{dr}{dt} = [\omega,r]$. Так как $r - const$ такое равенство будет верно. Из этого выведем вектор ускорения:
 
-\[ \vec w = \frac{dv}{dt} = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] \] так как $\vec \omega$ - вектор, то и угловое ускорение $\vec \epsilon = \frac{d\omega}{dt}$ - вектор.
+\[ \vec w = \frac{dv}{dt} = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] \] так как $\vec \omega$ - вектор, то и угловое ускорение $\vec \varepsilon = \frac{d\omega}{dt}$ - вектор.
 
 \vspace{5px}
 
 Получаем :
-\[ \vec w = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] = [\vec \epsilon, \vec r] + [\vec \omega, \vec v]  = [\vec \epsilon, \vec r] + [\omega, [\omega,r]] \text{ ,где $ [\vec \epsilon, \vec r] = w_\tau $ , а  $[\omega, [\omega,r]] = w_n$}\] %TODO: Переполнение фиксануть
+\[ \vec w = \frac{d}{dt} [\vec \omega, \vec r] = [\frac{d\omega}{dt}, \vec r] + [\vec \omega, \frac{dr}{dt}] = [\vec \varepsilon, \vec r] + [\vec \omega, \vec v]  = [\vec \varepsilon, \vec r] + [\omega, [\omega,r]] \text{ ,где $ [\vec \varepsilon, \vec r] = w_\tau $ , а  $[\omega, [\omega,r]] = w_n$}\] %TODO: Переполнение фиксануть
 
 \subsection{Скорость и ускорение точек абсолютно твердого тела при сложном движении}
 \begin{center}
@@ -1094,8 +1094,8 @@ $[\vec w, \vec a]$ - вращательное движение вокруг по
 
 Еще раз продифференцируем по t
 \[\vec w_M = \vec w_a + \frac{d[\vec w, \vec a]}{dt}\]
-\[\vec w_M = \vec w_A + [\vec \epsilon, \vec a] + [\vec w, [\vec w, \vec a]]\]
-где $\vec w_A$ - поступательное ускорение, а $[\vec \epsilon, \vec a] + [\vec w, [\vec w, \vec a]]$ - ускорение вращательного движения
+\[\vec w_M = \vec w_A + [\vec \varepsilon, \vec a] + [\vec w, [\vec w, \vec a]]\]
+где $\vec w_A$ - поступательное ускорение, а $[\vec \varepsilon, \vec a] + [\vec w, [\vec w, \vec a]]$ - ускорение вращательного движения
 
 \subsection{Инвариантность вектора угловой скорости}
 Инвариантность вектора угловой скорости означает, что вектор угловой скорости сохраняет свое направление и величину в инерциальной системе отсчета, независимо от движения самого тела. Другими словами, если тело вращается относительно неподвижной точки его угловая скорость будет одинаковой в любой инерциальной системе отсчета.
