@@ -1525,36 +1525,12 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 повехности проводника будут перпендикулярны поверхности проводника, из свойств эквипотенциальных поверхностей.
 
 Рассмотрим проводник вида:
-\begin{center}
-    \definecolor{ttttff}{rgb}{0.2,0.2,1}
-    \definecolor{fftttt}{rgb}{1,0.2,0.2}
-    \definecolor{qqccqq}{rgb}{0,0.8,0}
-    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-        \draw (4,23)-- (4,18);
-        \draw [shift={(6.92,20.5)},color=qqccqq]  plot[domain=-1.51:1.51,variable=\t]({1*1.5*cos(\t r)+0*1.5*sin(\t r)},{0*1.5*cos(\t r)+1*1.5*sin(\t r)});
-        \draw (7,22)-- (4.74,20.55);
-        \draw (7,19)-- (4.74,20.55);
-        \draw [color=fftttt](7.29,21.69) node[anchor=north west] {$+$};
-        \draw [color=fftttt](7.58,21) node[anchor=north west] {$+$};
-        \draw [color=fftttt](7.56,20.46) node[anchor=north west] {$+$};
-        \draw [color=fftttt](7.41,20.04) node[anchor=north west] {$+$};
-        \draw [color=fftttt](7.72,21.48) node[anchor=north west] {$+$};
-        \draw [color=ttttff](5.16,20.94) node[anchor=north west] {$-$};
-        \draw [color=ttttff](5.62,20.69) node[anchor=north west] {$-$};
-        \draw [color=ttttff](5.54,21.27) node[anchor=north west] {$-$};
-        \draw [shift={(4.28,20)},color=qqccqq]  plot[domain=0.67:1.69,variable=\t]({1*2.42*cos(\t r)+0*2.42*sin(\t r)},{0*2.42*cos(\t r)+1*2.42*sin(\t r)});
-        \draw [shift={(4,18.79)},color=qqccqq]  plot[domain=0.95:1.57,variable=\t]({1*2.9*cos(\t r)+0*2.9*sin(\t r)},{0*2.9*cos(\t r)+1*2.9*sin(\t r)});
-        \draw [shift={(4.47,21.39)},color=qqccqq]  plot[domain=4.44:5.4,variable=\t]({1*2.04*cos(\t r)+0*2.04*sin(\t r)},{0*2.04*cos(\t r)+1*2.04*sin(\t r)});
-        \draw [shift={(4.92,20.88)},color=qqccqq]  plot[domain=4.29:5.52,variable=\t]({1*2.23*cos(\t r)+0*2.23*sin(\t r)},{0*2.23*cos(\t r)+1*2.23*sin(\t r)});
-        \draw [color=qqccqq] (4.74,20.55)-- (4,20.57);
-        \draw [color=qqccqq] (6.04,38.25) circle (1.29cm);
-        \draw [shift={(11.95,48.86)},color=qqccqq]  plot[domain=4.23:4.62,variable=\t]({1*10.9*cos(\t r)+0*10.9*sin(\t r)},{0*10.9*cos(\t r)+1*10.9*sin(\t r)});
-        \draw [shift={(11.11,26.24)},color=qqccqq]  plot[domain=1.58:1.96,variable=\t]({1*11.76*cos(\t r)+0*11.76*sin(\t r)},{0*11.76*cos(\t r)+1*11.76*sin(\t r)});
-        \draw [shift={(-1.11,50.71)},color=qqccqq]  plot[domain=4.95:5.24,variable=\t]({1*13.08*cos(\t r)+0*13.08*sin(\t r)},{0*13.08*cos(\t r)+1*13.08*sin(\t r)});
-        \draw [shift={(0.42,24.36)},color=qqccqq]  plot[domain=1.21:1.46,variable=\t]({1*13.73*cos(\t r)+0*13.73*sin(\t r)},{0*13.73*cos(\t r)+1*13.73*sin(\t r)});
-        \draw (3.93,37.08) node[anchor=north west] {$\textit{да прибудет с нами понимание}$};
-    \end{tikzpicture}
-\end{center}
+
+
+фигня с рисунком хз 
+
+
+
 Важно отметить, что заряды на проводниках будут распределены неравномерно, так на рисунке ниже они будут скапливаться на остриях.
 
 \section{Электроёмкость}
@@ -2037,7 +2013,7 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \[\frac{A}{q} = U = \mathscr{E}_{ab} + (\phi_1 - \phi_2)\]
 В общем говоря, разность потенциалов и падение напряжение не одно и то же, они совпадают тогда и только тогда: $\mathscr{E}_{ab}$ 
 
-\define Проводник на котором нет падения ЭДС называется однородным, если ЭДС имеется называется однородным.
+\define Проводник на котором нет ЭДС называется однородным, если ЭДС имеется называется неоднородным.
 
 \subsection{Закон Ома сопротивления проводников}
 
@@ -2055,7 +2031,21 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \end{center}
 \define Величина обратная к сопротивлению проводника: $\frac{1}{\rho} = \sigma$ называется удельной проводимостью.
 
-рисунок
+\begin{center}
+
+    \definecolor{ttccqq}{rgb}{0.2,0.8,0}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.5008306419693462cm,y=2.51583894838904cm]
+    \clip(5.44,7.69) rectangle (8.11,9.01);
+    \draw [color=ffqqqq,fill=ffqqqq,fill opacity=0.05] (6.13,8.22) ellipse (0.78cm and 0.79cm);
+    \draw [color=ttccqq] (6,8.5)-- (7.3,8.82);
+    \draw (6.17,7.91)-- (7.49,8.26);
+    \draw [shift={(7.45,8.56)}] plot[domain=-1.42:2.08,variable=\t]({1*0.3*cos(\t r)+0*0.3*sin(\t r)},{0*0.3*cos(\t r)+1*0.3*sin(\t r)});
+    \draw [color=ttccqq](6.59,9.01) node[anchor=north west] {$dl$};
+    \draw [color=ffqqqq](5.98,8.37) node[anchor=north west] {$dS$};
+    \end{tikzpicture}
+
+\end{center}
 
 Будем считать на dl напряженность постоянна, тогда
 
@@ -2099,10 +2089,28 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 Экспериментально было установлено что происходит  выделение тепла проводников при прохождении тока, так вычислили колоичесвто энергии выделяемое проводником
 
 \[ Q = I^2 R t = U \cdot I \cdot t = \frac{U^2}{R} \cdot t\]
-Формула для постоянного тока, температура проводника не меняется. Если ток пременный то выделяем элементарное тепло при котором ток был потсоянный:
+Формула для постоянного тока, температура проводника не меняется. Если ток пременный то выделяем элементарное тепло при котором ток был постоянный:
 \[dQ = i^2 \cdot R dt\]
 Тогда:
 \[Q = \int_{t_1}^{t_2} i^2 R dt\]
+Снова рассмотрим малое время сечение:
+
+\begin{center}
+
+    \definecolor{ttccqq}{rgb}{0.2,0.8,0}
+    \definecolor{ffqqqq}{rgb}{1,0,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.5008306419693462cm,y=2.51583894838904cm]
+    \clip(5.44,7.69) rectangle (8.11,9.01);
+    \draw [color=ffqqqq,fill=ffqqqq,fill opacity=0.05] (6.13,8.22) ellipse (0.78cm and 0.79cm);
+    \draw [color=ttccqq] (6,8.5)-- (7.3,8.82);
+    \draw (6.17,7.91)-- (7.49,8.26);
+    \draw [shift={(7.45,8.56)}] plot[domain=-1.42:2.08,variable=\t]({1*0.3*cos(\t r)+0*0.3*sin(\t r)},{0*0.3*cos(\t r)+1*0.3*sin(\t r)});
+    \draw [color=ttccqq](6.59,9.01) node[anchor=north west] {$dl$};
+    \draw [color=ffqqqq](5.98,8.37) node[anchor=north west] {$dS$};
+    \end{tikzpicture}
+
+\end{center}
+
 Выделяем единицу длины проводника
 
 \[dQ = (\iota ds)^2 \cdot \rho \cdot \frac{dl}{ds} dt  = \iota^2 \cdot \rho \cdot ds \cdot dl \cdot dt =\iota^2 \cdot \rho \cdot dV \cdot dt \]
@@ -2113,8 +2121,27 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \[w = \frac{dQ}{dV \cdot dt} = \iota^2 \cdot \rho = \frac{E^2}{\rho}\]
 
 \subsection{Закон Ома для замкнутой цепи}
+\begin{center}
 
-рисунок
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(5.06,7.2) rectangle (8.32,8.92);
+    \draw (6.5,8.5)-- (5.5,8.5);
+    \draw (5.5,8.5)-- (5.5,7.5);
+    \draw (5.5,7.5)-- (6.5,7.5);
+    \draw (6.49,7.69)-- (6.49,7.33);
+    \draw (6.49,7.33)-- (7.49,7.33);
+    \draw (7.49,7.33)-- (7.49,7.69);
+    \draw (6.49,7.69)-- (7.49,7.69);
+    \draw (7.49,7.49)-- (8,7.5);
+    \draw (8,7.5)-- (8,8.5);
+    \draw (8,8.5)-- (6.64,8.49);
+    \draw (6.64,8.79)-- (6.63,8.21);
+    \draw (6.51,8.64)-- (6.51,8.32);
+    \draw (6.71,7.75) node[anchor=north west] {$R$};
+    \draw (6.41,8.32) node[anchor=north west] {$r$};
+    \end{tikzpicture}
+
+\end{center}
 
 Посчитаем падение напряжение на этом замкнутом участке
 \[U = \mathscr{E} + (\phi_2 - \phi_1)\]
@@ -2126,7 +2153,27 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \subsection{Коэфициент полезного действия источника тока}
 Рассмотрим замкнутую электрическую цепь:
 
-рисунок
+\begin{center}
+
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(5.06,7.2) rectangle (8.32,8.92);
+    \draw (6.5,8.5)-- (5.5,8.5);
+    \draw (5.5,8.5)-- (5.5,7.5);
+    \draw (5.5,7.5)-- (6.5,7.5);
+    \draw (6.49,7.69)-- (6.49,7.33);
+    \draw (6.49,7.33)-- (7.49,7.33);
+    \draw (7.49,7.33)-- (7.49,7.69);
+    \draw (6.49,7.69)-- (7.49,7.69);
+    \draw (7.49,7.49)-- (8,7.5);
+    \draw (8,7.5)-- (8,8.5);
+    \draw (8,8.5)-- (6.64,8.49);
+    \draw (6.64,8.79)-- (6.63,8.21);
+    \draw (6.51,8.64)-- (6.51,8.32);
+    \draw (6.71,7.75) node[anchor=north west] {$R$};
+    \draw (6.41,8.32) node[anchor=north west] {$r$};
+    \end{tikzpicture}
+
+\end{center}
 
 Согласно закону Ома 
 \[ U = IR = \frac{\mathscr{E}}{r+R} \cdot R \]
@@ -2141,7 +2188,83 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \end{center}
 
 \subsection{Разветвленные цепи. Правило Кирхгофа}
-рисунок
+\begin{center}
+
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{ttccqq}{rgb}{0.2,0.8,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=3.962785066761555cm,y=4.7275299135392705cm]
+\clip(6.18,7.99) rectangle (8.88,10.14);
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (6.68,9.26) -- (6.77,9.18) -- (6.65,9.06) -- (6.55,9.14) -- cycle;
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (8.32,9.29) -- (8.2,9.2) -- (8.33,9.06) -- (8.46,9.16) -- cycle;
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (7.12,8.47) -- (7.02,8.38) -- (7.19,8.27) -- (7.28,8.36) -- cycle;
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (7.93,8.45) -- (8.02,8.37) -- (7.88,8.27) -- (7.81,8.35) -- cycle;
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (7.54,9) -- (7.69,9) -- (7.68,9.2) -- (7.53,9.2) -- cycle;
+\draw (7.5,9.98)-- (7,9.5);
+\draw (7.5,9.98)-- (8,9.5);
+\draw (6.92,9.55)-- (7.06,9.43);
+\draw (8.09,9.57)-- (7.91,9.43);
+\draw (6.84,9.57)-- (7.08,9.35);
+\draw (8.16,9.55)-- (7.93,9.36);
+\draw (6.96,9.46)-- (6.72,9.22);
+\draw (8.05,9.46)-- (8.27,9.25);
+\draw [color=zzttqq] (6.68,9.26)-- (6.77,9.18);
+\draw [color=zzttqq] (6.77,9.18)-- (6.65,9.06);
+\draw [color=zzttqq] (6.65,9.06)-- (6.55,9.14);
+\draw [color=zzttqq] (6.55,9.14)-- (6.68,9.26);
+\draw [color=zzttqq] (8.32,9.29)-- (8.2,9.2);
+\draw [color=zzttqq] (8.2,9.2)-- (8.33,9.06);
+\draw [color=zzttqq] (8.33,9.06)-- (8.46,9.16);
+\draw [color=zzttqq] (8.46,9.16)-- (8.32,9.29);
+\draw (6.59,9.11)-- (6.37,8.9);
+\draw (8.38,9.1)-- (8.58,8.9);
+\draw (6.37,8.9)-- (6.8,8.6);
+\draw (8.58,8.9)-- (8.2,8.6);
+\draw (6.75,8.55)-- (6.86,8.68);
+\draw (6.96,8.7)-- (6.74,8.46);
+\draw (8.16,8.66)-- (8.25,8.54);
+\draw (8.1,8.68)-- (8.25,8.46);
+\draw (6.85,8.58)-- (7.08,8.43);
+\draw (8.18,8.57)-- (7.97,8.42);
+\draw [color=zzttqq] (7.12,8.47)-- (7.02,8.38);
+\draw [color=zzttqq] (7.02,8.38)-- (7.19,8.27);
+\draw [color=zzttqq] (7.19,8.27)-- (7.28,8.36);
+\draw [color=zzttqq] (7.28,8.36)-- (7.12,8.47);
+\draw [color=zzttqq] (7.93,8.45)-- (8.02,8.37);
+\draw [color=zzttqq] (8.02,8.37)-- (7.88,8.27);
+\draw [color=zzttqq] (7.88,8.27)-- (7.81,8.35);
+\draw [color=zzttqq] (7.81,8.35)-- (7.93,8.45);
+\draw (7.23,8.32)-- (7.6,8.2);
+\draw (7.84,8.31)-- (7.6,8.2);
+\draw (7.6,8.2)-- (7.6,9);
+\draw [color=zzttqq] (7.54,9)-- (7.69,9);
+\draw [color=zzttqq] (7.69,9)-- (7.68,9.2);
+\draw [color=zzttqq] (7.68,9.2)-- (7.53,9.2);
+\draw [color=zzttqq] (7.53,9.2)-- (7.54,9);
+\draw (7.5,9.98)-- (7.57,9.39);
+\draw (7.52,9.38)-- (7.65,9.39);
+\draw (7.48,9.34)-- (7.7,9.37);
+\draw (7.59,9.35)-- (7.6,9.2);
+\draw (6.61,9.23) node[anchor=north west] {$R_1$};
+\draw (7.11,8.45) node[anchor=north west] {$R_2$};
+\draw (7.88,8.45) node[anchor=north west] {$R_3$};
+\draw (8.29,9.26) node[anchor=north west] {$R_4$};
+\draw [color=ttccqq](7.39,10.16) node[anchor=north west] {$1$};
+\draw [color=ttccqq](6.31,9.12) node[anchor=north west] {$2$};
+\draw [color=ttccqq](7.57,8.21) node[anchor=north west] {$3$};
+\draw [color=ttccqq](8.59,9.11) node[anchor=north west] {$4$};
+\draw (6.78,9.7) node[anchor=north west] {$E_1$};
+\draw (6.88,8.8) node[anchor=north west] {$E_2$};
+\draw (8.09,8.77) node[anchor=north west] {$E_3$};
+\draw (7.86,9.46) node[anchor=north west] {$E_4$};
+\begin{scriptsize}
+\fill [color=ttccqq] (7.5,9.98) circle (1.5pt);
+\fill [color=ttccqq] (6.37,8.9) circle (1.5pt);
+\fill [color=ttccqq] (8.58,8.9) circle (1.5pt);
+\fill [color=ttccqq] (7.6,8.2) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
 
 \define Точка цепи в которой сходятся три и более проводников называется узлом цепи.
 
@@ -2182,21 +2305,48 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 
 \section{Магнитное поле}
 \subsection{Понятие магнитного поля}
-Для изучения магнитого поля используется рамка с током:
+Для изучения магнитого поля используется рамка с током.
 
-рисунок
-
-Магнитное поля оказывает на контур с током ориентирующее действие, а именно поворачивает
-
-рисунок
+Магнитное поля оказывает на контур с током ориентирующее действие, а именно поворачивает.
 
 Направление $\vec n$ выбирается по \textit{правилу буравчика}.
+\begin{center}
+
+    \definecolor{ttccqq}{rgb}{0.2,0.8,0}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.416615769450932cm,y=3.0578913622465134cm]
+    \clip(5.53,10.11) rectangle (8.35,11.57);
+    \draw (6,11)-- (6,10.5);
+    \draw (6,11)-- (7.5,11.5);
+    \draw (7.5,11)-- (7.5,11.5);
+    \draw (7.5,11)-- (6.97,10.79);
+    \draw (6.97,10.79)-- (6.97,10.35);
+    \draw (6,10.5)-- (6.78,10.76);
+    \draw (6.78,10.76)-- (6.78,10.31);
+    \draw (6.48,11.22)-- (6.39,11.13);
+    \draw (6.39,11.13)-- (6.5,11.11);
+    \draw (7.45,11.23)-- (7.5,11.34);
+    \draw (7.5,11.34)-- (7.56,11.24);
+    \draw (7.18,11.45)-- (7.06,11.35);
+    \draw (7.06,11.35)-- (7.19,11.34);
+    \draw (5.97,10.77)-- (6,10.7);
+    \draw (6,10.7)-- (6.05,10.77);
+    \draw (6.74,10.51)-- (6.78,10.44);
+    \draw (6.78,10.44)-- (6.81,10.52);
+    \draw (6.93,10.63)-- (6.97,10.7);
+    \draw (6.97,10.7)-- (7,10.63);
+    \draw [->,color=ttccqq] (6.85,11.05) -- (8.05,11.05);
+    \draw [color=ttccqq](7.61,11.24) node[anchor=north west] {$\vec n$};
+    \begin{scriptsize}
+    \fill [color=ttccqq] (6.85,11.05) circle (1.5pt);
+    \end{scriptsize}
+    \end{tikzpicture}
+
+\end{center}
 
 \define Магнитный моент контура(рамки) $P_m = I \cdot S$ или в векторном виде: $\vec P_m = P_m \cdot \vec n$
 
 Тогда напрвлением магнитного поля будет выбран вектор нормали $\vec n$.
 
-рисунок
 
 Так как поле вращает рамку, то здесь применима не сила $\vec F$, а момент силы $\vec M$, выберем $\vec M_{max}$
 
@@ -2211,8 +2361,41 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 
 \subsection{Закон Био-Савара-Лапласа}
 Возьмем произвольный проводник с током
+\begin{center}
 
-рисунок 
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=2.3026959961987514cm,y=2.8657614186802514cm]
+\clip(4.16,4.37) rectangle (8.76,8.12);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.33) arc (57.75:89.85:0.33) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 2pt off 2pt] (6.27,7.02) ellipse (3.69cm and 1.2cm);
+\draw [dash pattern=on 2pt off 2pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 2pt off 2pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 2pt off 2pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 2pt off 2pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 2pt off 2pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 2pt off 2pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.14) node[anchor=north west] {$d \vec B$};
+\draw (4.79,7.74) node[anchor=north west] {$i$};
+\draw (5.87,5.37) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.65) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.72,6.79) node[anchor=north west] {$A$};
+\begin{scriptsize}
+\fill [color=black] (7.72,6.84) circle (1.5pt);
+\fill [color=black] (6.26,7.01) circle (1.5pt);
+\draw[color=fftttt] (6.41,4.71) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
 
 Возьмем также небольшой участок dl, r - радиус-вектор точки
 Было получено следующее соотношение 
@@ -2236,7 +2419,63 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \subsection{Поля прямого и кругового токов}
 Возьмем ток, текущий по прямолинейному бесконечному проводнику.
 
-рисунок 
+\define Ток текущий по прямолинейному беконечному проводнику называетс прямым током 
+
+\begin{center}
+
+    \definecolor{wwqqff}{rgb}{0.4,0,1}
+    \definecolor{qqccqq}{rgb}{0,0.8,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{fftttt}{rgb}{1,0.2,0.2}
+    \definecolor{ttfftt}{rgb}{0.2,1,0.2}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7183182423273892cm,y=0.7351443650202202cm]
+    \clip(7.68,16.78) rectangle (14.78,24.33);
+    \fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+    \draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.75) arc (57.75:89.85:0.75) -- cycle;
+    \draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.67) arc (-129.81:-90:0.67) -- cycle;
+    \draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.75) arc (50.19:90:0.75) -- cycle;
+    \draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.5) arc (-149.04:-129.81:0.5) -- cycle;
+    \draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.15cm and 0.31cm);
+    \draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+    \draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+    \draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+    \draw [->] (6.25,4.5) -- (6.25,5.48);
+    \draw [->] (7.72,6.84) -- (8.23,7.21);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+    \draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+    \draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+    \draw (4.57,7.36)-- (4.7,7.31);
+    \draw (4.57,7.36)-- (4.71,7.42);
+    \draw (7.92,7.25) node[anchor=north west] {$d \vec B$};
+    \draw (4.79,7.86) node[anchor=north west] {$i$};
+    \draw (5.86,5.48) node[anchor=north west] {$d \vec l$};
+    \draw (6.96,5.77) node[anchor=north west] {$\vec r$};
+    \draw [->] (6.25,4.5) -- (7.23,6.06);
+    \draw (7.72,6.74) node[anchor=north west] {$A$};
+    \draw [->] (9,17) -- (9,24);
+    \draw [->] (9,17) -- (9,20);
+    \draw (9,17)-- (14,23);
+    \draw [->,color=qqqqff] (11,23) -- (9,23);
+    \draw [->,color=qqqqff] (11,23) -- (14,23);
+    \draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+    \draw (9,20)-- (10.67,19);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.5) arc (-149.04:-129.81:0.5);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.42) arc (-149.04:-129.81:0.42);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.33) arc (-149.04:-129.81:0.33);
+    \draw [color=qqqqff](10.91,22.99) node[anchor=north west] {$b$};
+    \draw (8.48,23.91) node[anchor=north west] {$i$};
+    \draw (8.5,18.98) node[anchor=north west] {$d \vec l$};
+    \draw [color=qqccqq](9.12,18.6) node[anchor=north west] {$\alpha$};
+    \draw [color=qqccqq](13.45,22.56) node[anchor=north west] {$\alpha$};
+    \draw (10,19.82) node[anchor=north west] {x};
+    \begin{scriptsize}
+    \draw[color=fftttt] (5.49,26.12) node {$\alpha$};
+    \end{scriptsize}
+    \end{tikzpicture}
+
+\end{center}
 
 Получим, что $r = \frac{b}{sin{\alpha}}$:
 \[dl = \frac{rd\alpha}{sin{\alpha}} = \frac{bd\alpha}{sin{\alpha}^2}\]
@@ -2251,7 +2490,76 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 
 Рассмотри ток, текущий по круговому проовднику:
 
-рисунок
+\begin{center}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(9.68,42.06) rectangle (14.49,46.36);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.36) arc (57.75:89.85:0.36) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.32) arc (-129.81:-90:0.32) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.36) arc (50.19:90:0.36) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.24) arc (-149.04:-129.81:0.24) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.24) arc (117.44:180.25:0.24) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.15) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.75) node[anchor=north west] {$i$};
+\draw (5.86,5.37) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.65) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.72,6.79) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.24) arc (-149.04:-129.81:0.24);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.2) arc (-149.04:-129.81:0.2);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.16) arc (-149.04:-129.81:0.16);
+\draw [color=qqqqff](10.9,22.89) node[anchor=north west] {$b$};
+\draw (8.48,23.8) node[anchor=north west] {$i$};
+\draw (8.5,18.88) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.5) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.45,22.46) node[anchor=north west] {$\alpha$};
+\draw (10.01,19.71) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+\draw (11.86,46.56)-- (11.83,41.25);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.88) node[anchor=north west] {$R$};
+\draw (12.74,44.43) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.94,43.98) node[anchor=north west] {$i$};
+\draw (13.95,44.85) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.44) node[anchor=north west] {$\vec B $};
+\begin{scriptsize}
+\draw[color=fftttt] (9.37,46.85) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
 
 Тогда в центре:
 
@@ -2264,7 +2572,93 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 
 Рассмотрим некоторый произвольный контур:
 
-рисунок
+\begin{center}
+
+\definecolor{xdxdff}{rgb}{0.49,0.49,1}
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(11.77,56.32) rectangle (17.03,60.04);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.36) arc (57.75:89.85:0.36) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.32) arc (-129.81:-90:0.32) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.36) arc (50.19:90:0.36) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.24) arc (-149.04:-129.81:0.24) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.24) arc (117.44:180.25:0.24) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.24) arc (-47.84:-3.25:0.24) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.24) arc (-0.48:37.66:0.24) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.15) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.75) node[anchor=north west] {$i$};
+\draw (5.86,5.37) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.65) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.72,6.79) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.24) arc (-149.04:-129.81:0.24);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.2) arc (-149.04:-129.81:0.2);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.16) arc (-149.04:-129.81:0.16);
+\draw [color=qqqqff](10.9,22.89) node[anchor=north west] {$b$};
+\draw (8.48,23.8) node[anchor=north west] {$i$};
+\draw (8.5,18.88) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.5) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.45,22.46) node[anchor=north west] {$\alpha$};
+\draw (10.01,19.71) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+\draw (11.86,46.56)-- (11.83,41.25);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.88) node[anchor=north west] {$R$};
+\draw (12.74,44.43) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.94,43.98) node[anchor=north west] {$i$};
+\draw (13.95,44.85) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.44) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.3,60.03) node[anchor=north west] {$d \vec l$};
+\draw (13.72,59.31) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.15) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.83,59.05) node[anchor=north west] {$dl_B$};
+\begin{scriptsize}
+\draw[color=fftttt] (11.38,60.29) node {$\alpha$};
+\fill [color=xdxdff] (14.91,59.59) circle (1.5pt);
+\fill [color=qqqqff] (13.5,58.5) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
 
 \[\vec B d \vec l = B \cdot dl \cdot cos{d \alpha} = \frac{\mu_0 i}{2r \pi} \cdot r d \alpha = \frac{\mu_0 i}{2 \pi} d \alpha\]
 
@@ -2281,25 +2675,28 @@ $\kappa > 0$ - диэлектрическая восприимчивость д�
 \define Соленоидд - стержень цилиндрической формы, с намотонной на него проволокой(проводником).
 
 Пустим по соленоиду ток:
+\begin{center}
+    \includegraphics[width=6cm, height=2cm]{../img/soly.png}
+\end{center}
 
-рисунок 
 
 Создаваемое магнитное поле будет направлено по оси соленоида.
 
 Рассмотрим магнитное поле в других точках, будем считать что соленоид бесконечен
 \begin{enumerate}
     \item Возьмем два витка соленоида и рассмотрим такой рисунок
-    рисунок 
-
+    \begin{center}
+        \includegraphics[width=6cm, height=4cm]{../img/soly_1.png}
+    \end{center}
     \[|B_1| = |B_2| , \alpha = \beta \Rightarrow \vec B = \vec B_1 + \vec B_2\]
     \begin{center}
         где B || оси соленоида.
     \end{center}
 
     \item Возьмем замкнутый контур внутри соленоида 
-    
-    рисунок
-    
+    \begin{center}  
+        \includegraphics[width=9cm, height=4cm]{../img/soly_2.png}
+    \end{center}
     \[ \oint_{\zeta} \vec B d \vec l = \int_{1,2} \vec B d \vec l + \int_{2,3} \vec B d \vec l + \int_{3,4} \vec B d \vec l + \int_{4,1} \vec B d \vec l\]
     Поскольку $\vec B \bot d \vec l \Rightarrow \int_{2,3} \vec B d \vec l = 0$ и $\int_{4,1} \vec B d \vec l = 0$,
     и при отдалении участка 3,4 от соленоида на бесконечности $\int_{3,4} \vec B d \vec l \to 0$ ,
@@ -2335,17 +2732,106 @@ $\vec B^{\prime}$ - внутренне магнитное поле, тогда �
 \[\vec J = \frac{\sum_{\Delta V^{\prime}} \vec P_m}{\Delta V}\]
 
 \subsection{Описание магнитного поля магнетика}
-Возьмем замкнутую поверхность:
-
-рисунок 
+Возьмем замкнутую поверхность. 
 
 Очевидно. что $\oiint_{S} \vec B \vec n dS = 0$ поскольку линии замнуты, то есть при входе они обызятельно выходят или количество линий входящих и выходящих одинаковое.
 Тогда с учетов $\vec B = \vec B_0 + \vec B^{\prime}$
 \[\oint_{\zeta} \vec B d \vec l = \oint_{\zeta} \vec B_0 d \vec l  + \oint_{\zeta} \vec B^{\prime} d \vec l = \mu_0 \sum i + \mu_0 \sum i_m \]
 
 Возьмем маленький кусочек траектории dl, для упрощения будем считать. что все молекулярные точки имеют одинаковую площадь
+\begin{center}
 
-рисунок 
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.3828442246291806cm,y=1.4011913919436727cm]
+\clip(13.14,68.48) rectangle (18.37,70.97);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.36) arc (57.75:89.85:0.36) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.32) arc (-129.81:-90:0.32) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.36) arc (50.19:90:0.36) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.24) arc (-149.04:-129.81:0.24) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.24) arc (117.44:180.25:0.24) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.24) arc (-47.84:-3.25:0.24) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.24) arc (-0.48:37.66:0.24) -- cycle;
+\draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.24) arc (10.7:43.65:0.24) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (2.22cm and 0.59cm);
+\draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.15) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.75) node[anchor=north west] {$i$};
+\draw (5.86,5.37) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.65) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.72,6.79) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (14,23)-- (14,17);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.24) arc (-149.04:-129.81:0.24);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.2) arc (-149.04:-129.81:0.2);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.16) arc (-149.04:-129.81:0.16);
+\draw [color=qqqqff](10.9,22.89) node[anchor=north west] {$b$};
+\draw (8.48,23.8) node[anchor=north west] {$i$};
+\draw (8.5,18.88) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.5) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.45,22.46) node[anchor=north west] {$\alpha$};
+\draw (10.01,19.71) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.85cm and 0.96cm);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.88) node[anchor=north west] {$R$};
+\draw (12.74,44.43) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.94,43.98) node[anchor=north west] {$i$};
+\draw (13.95,44.85) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.44) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.3,60.03) node[anchor=north west] {$d \vec l$};
+\draw (13.72,59.31) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.15) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.83,59.05) node[anchor=north west] {$dl_B$};
+\draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.65cm and 0.46cm);
+\draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.62cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+\draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+\draw (14.25,69.48)-- (17.28,70.05);
+\draw [->] (14.25,69.48) -- (15.46,70.63);
+\draw (14.72,70.45) node[anchor=north west] {$\vec B$};
+\draw (15.78,69.78) node[anchor=north west] {$dl$};
+\begin{scriptsize}
+\draw[color=fftttt] (12.55,71.65) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
 
 Объем цилиндра: $dV_l = S_m \cdot dl \cdot cos{\alpha}$. В самом цилиндре лежать центры молекул.
 
@@ -2378,6 +2864,1347 @@ $\vec B^{\prime}$ - внутренне магнитное поле, тогда �
 
 Экспериментально было показано, что $\vec J = \chi \cdot \vec H \Rightarrow$:
 \[\vec H(1+ \chi) = \frac{\vec B}{\mu_0} \Rightarrow \vec H = \frac{B}{\mu \mu_0}\]
+
+Так $\chi$ может быть меньше 0 $\Rightarrow \mu $ может быть меньше единицы. У некоторых веществ $\chi \neq const (\Rightarrow \mu \neq const )$ она зависит от магнитного поля.
+В вакууме $\chi = 0, \mu = 1$.
+
+Покажем, что $\vec H = \vec H_0$. Возьмем некоторый стержень и расположим его вдоль вектора магнитной индукции $\vec B_0$. Все молекулярные токи $i_m$ будут соориентированы перпендикулярно $\vec B$.
+
+Заметим, что \textit{внутри} стрежня молекулярные токи $i_m$ компенсируются, а те которые вышли на границу ничем не компенсируются. Получается, что по контуру 
+циркулирует ток $I_1$, так как $I_1$ есть на протяжении всего стержня, то логично рассматривать его как соленоид.
+
+Выделим в соленоиде кусочек длины $dl$, посчитаем магнитный момент:
+\[dp_m = S \cdot I_1 dl \Rightarrow dp_m = I_1 \cdot dv \Rightarrow \vec J = I_1 = \frac{dp_m}{dv}\]
+\begin{center}
+    --- это и есть вектор намагничивания $J$
+\end{center}
+Так подставим этот вектор $I_1 = J$, получим $\vec B^{\prime} = \mu_0 \cdot \vec J$, таким образом 
+\[\vec B = \vec B_0 + \vec B^{\prime} = \vec B_0 + \mu_0 \cdot \vec J\]
+Из определения $\vec H = \frac{\vec B}{\mu_0} - \vec J$
+\[\vec H = \frac{\vec B_0 + \mu_0 \cdot \vec J }{\mu_0} - \vec J\]
+\[\vec H = \frac{\vec B_0}{\mu_0} = \vec H_0 \Rightarrow H = H_0\]
+
+Таким образом. мы получили что $H$ в магнетике и в вакууме $H_0$ совпадают.
+
+Отсюда вытекает:
+
+\[
+\left\{
+\begin{aligned}
+    \vec H &= \frac{\vec B}{\mu \mu_0} \\
+    \vec H_0 &= \frac{\vec B}{\mu_0}
+\end{aligned}
+\right.
+\quad \Rightarrow \quad
+\frac{B}{\mu} = B_0 \Rightarrow B = \mu \cdot B_0
+\]
+\begin{center}
+    --- то есть $ \mu$ показывает во сколько раз изменяется магнитное поле в магнетике.
+\end{center}
+
+Замечание: Если магнитное поле расположено под углом, то так же как и электричске поле оно преломляется на границах.
+\subsection{Виды магнетиков}
+
+\textit{\textbf{Классификация магнетиков}}
+\begin{enumerate}
+    \item Диамагнетики ($\chi < 0$, с порядком $10^{-8} \ldots 10^{-7}$)
+    \item Парамагнетики ($\chi > 0$, с порядком $10^{-7} \ldots 10^{-4}$)
+    \item Ферромагнетики ($\chi > 0$, с порядком $10^{3}$)
+    \item Ферримагнетики
+    \item Антиферромагнетики
+\end{enumerate}
+\begin{center}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=4.437720328015432cm,y=5.287039467877825cm]
+\clip(17.15,83.57) rectangle (18.61,84.04);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.1) arc (57.75:89.85:0.1) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.09) arc (-129.81:-90:0.09) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.1) arc (50.19:90:0.1) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.07) arc (-149.04:-129.81:0.07) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.07) arc (117.44:180.25:0.07) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.07) arc (-47.84:-3.25:0.07) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.07) arc (-0.48:37.66:0.07) -- cycle;
+\draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.07) arc (10.7:43.65:0.07) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (7.12cm and 2.22cm);
+\draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.08) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.68) node[anchor=north west] {$i$};
+\draw (5.87,5.31) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.59) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.72,6.83) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (14,23)-- (14,17);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.07) arc (-149.04:-129.81:0.07);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.06) arc (-149.04:-129.81:0.06);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.05) arc (-149.04:-129.81:0.05);
+\draw [color=qqqqff](10.91,22.82) node[anchor=north west] {$b$};
+\draw (8.48,23.74) node[anchor=north west] {$i$};
+\draw (8.5,18.81) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.12,18.43) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.45,22.38) node[anchor=north west] {$\alpha$};
+\draw (10,19.64) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (9.15cm and 3.62cm);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.81) node[anchor=north west] {$R$};
+\draw (12.75,44.36) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.93,43.91) node[anchor=north west] {$i$};
+\draw (13.94,44.78) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.37) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.3,59.96) node[anchor=north west] {$d \vec l$};
+\draw (13.72,59.24) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.08) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.83,58.98) node[anchor=north west] {$dl_B$};
+\draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (2.09cm and 1.73cm);
+\draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (2cm and 1.58cm);
+\draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+\draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+\draw (14.25,69.48)-- (17.28,70.05);
+\draw [->] (14.25,69.48) -- (15.46,70.63);
+\draw (14.72,70.38) node[anchor=north west] {$\vec B$};
+\draw (15.78,69.71) node[anchor=north west] {$dl$};
+\draw [->] (17.2,83.8) -- (18.6,83.8);
+\draw(17.8,83.8) ellipse (0.89cm and 1.06cm);
+\draw (17.94,83.97)-- (17.95,83.93);
+\draw (17.95,83.93)-- (17.91,83.94);
+\draw (18.44,83.9) node[anchor=north west] {$\vec B$};
+\begin{scriptsize}
+\draw[color=fftttt] (16.97,84.44) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
+Электорн вращается вокруг ядра по некоторой окружности. Значит он обладает ордитальным моментом $p_m$. Но электрон также обладает собственным магнитным моментом --- спином($p_s$).
+Складываяясь влияют на магнитный момент молекулы.
+\begin{itemize}
+    \item Собственный магнитный момент есть у всех магнетиков за исключением диамагнетиков, то есть $p_s, p_m$ скомпенсировали друг друга. Диамагнетики намагничиваются против направления магнитного поля.
+
+    --- \textit{\textbf{Явление диамагнетизма}} : происхожит прецессия ордиты электрона, то есть она сама начинает вращаться. Это создает дополнительное смещение электрона.
+
+    \item  У парамагнетиков все молекулы обладают магнитным моментом, но они перемешаны и в магнитном поле разворачиваются,
+    создавая намагниченность, то есть без магнитного поля они друг друга компенсируют.
+
+    \item Ферромагнетики обладают доменной структурой, то есть в некоторых локальнх областях магнитные моменты направлены в одну сторону. То ест всне магнитного поля они также 
+    не намагничиваются, но в магнитном поле они все стремятся развернутся в одну сторону, значительно усиливая магнитное поле.
+    После снятия магнитного поля намагниченность ферромагнетиков уменьшается, но сохраняется, то есть обладают остаточной намагниченностью.У ферромагнетиков имеется точка Кюри. Магнетик 
+    перестает быть ферромагнетиком и становится парамагнетиком.
+    \begin{center}
+
+    \definecolor{qqwuqq}{rgb}{0,0.39,0}
+    \definecolor{wwqqff}{rgb}{0.4,0,1}
+    \definecolor{qqccqq}{rgb}{0,0.8,0}
+    \definecolor{qqqqff}{rgb}{0,0,1}
+    \definecolor{fftttt}{rgb}{1,0.2,0.2}
+    \definecolor{ttfftt}{rgb}{0.2,1,0.2}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+    \clip(7.59,90.95) rectangle (17.8,95.07);
+    \fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+    \draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.72) arc (57.75:89.85:0.72) -- cycle;
+    \draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.64) arc (-129.81:-90:0.64) -- cycle;
+    \draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.72) arc (50.19:90:0.72) -- cycle;
+    \draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.48) arc (-149.04:-129.81:0.48) -- cycle;
+    \draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.48) arc (117.44:180.25:0.48) -- cycle;
+    \draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.48) arc (-47.84:-3.25:0.48) -- cycle;
+    \draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.48) arc (-0.48:37.66:0.48) -- cycle;
+    \draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.48) arc (10.7:43.65:0.48) -- cycle;
+    \draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+    \draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+    \draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+    \draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+    \draw [->] (6.25,4.5) -- (6.25,5.48);
+    \draw [->] (7.72,6.84) -- (8.23,7.21);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+    \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+    \draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+    \draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+    \draw (4.57,7.36)-- (4.7,7.31);
+    \draw (4.57,7.36)-- (4.71,7.42);
+    \draw (7.92,7.25) node[anchor=north west] {$d \vec B$};
+    \draw (4.8,7.84) node[anchor=north west] {$i$};
+    \draw (5.87,5.47) node[anchor=north west] {$d \vec l$};
+    \draw (6.97,5.75) node[anchor=north west] {$\vec r$};
+    \draw [->] (6.25,4.5) -- (7.23,6.06);
+    \draw (7.71,6.74) node[anchor=north west] {$A$};
+    \draw [->] (9,17) -- (9,24);
+    \draw [->] (9,17) -- (9,20);
+    \draw (9,17)-- (14,23);
+    \draw [->,color=qqqqff] (11,23) -- (9,23);
+    \draw [->,color=qqqqff] (11,23) -- (14,23);
+    \draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+    \draw (14,23)-- (14,17);
+    \draw (9,20)-- (10.67,19);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.48) arc (-149.04:-129.81:0.48);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.4) arc (-149.04:-129.81:0.4);
+    \draw [shift={(14,23)},color=wwqqff] (-149.04:0.32) arc (-149.04:-129.81:0.32);
+    \draw [color=qqqqff](10.91,22.99) node[anchor=north west] {$b$};
+    \draw (8.48,23.89) node[anchor=north west] {$i$};
+    \draw (8.49,18.98) node[anchor=north west] {$d \vec l$};
+    \draw [color=qqccqq](9.11,18.59) node[anchor=north west] {$\alpha$};
+    \draw [color=qqccqq](13.44,22.54) node[anchor=north west] {$\alpha$};
+    \draw (10,19.8) node[anchor=north west] {x};
+    \draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+    \draw [->] (11.84,44.35) -- (11.86,46.01);
+    \draw [->] (14.01,44.36) -- (13.86,44.99);
+    \draw (11.84,44.35)-- (14.01,44.36);
+    \draw (11.84,44.35)-- (10.5,44.83);
+    \draw (11.17,44.98) node[anchor=north west] {$R$};
+    \draw (12.74,44.52) node[anchor=north west] {$\vec r$};
+    \draw (13.06,43.78)-- (13.2,43.79);
+    \draw (13.2,43.79)-- (13.08,43.73);
+    \draw (12.93,44.07) node[anchor=north west] {$i$};
+    \draw (13.95,44.95) node[anchor=north west] {$d \vec l$};
+    \draw (11.91,45.53) node[anchor=north west] {$\vec B $};
+    \draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+    \draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+    \draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+    \draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+    \draw [->] (14.91,59.59) -- (13.5,58.5);
+    \draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+    \draw [->] (14.91,59.59) -- (16.23,58.13);
+    \draw [color=qqccqq](15.3,60.13) node[anchor=north west] {$d \vec l$};
+    \draw (13.71,59.41) node[anchor=north west] {$\vec r$};
+    \draw (15.89,59.25) node[anchor=north west] {$\vec B$};
+    \draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+    \draw (14.83,59.14) node[anchor=north west] {$dl_B$};
+    \draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.47cm and 0.33cm);
+    \draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.45cm and 0.3cm);
+    \draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+    \draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+    \draw (14.25,69.48)-- (17.28,70.05);
+    \draw [->] (14.25,69.48) -- (15.46,70.63);
+    \draw (14.71,70.55) node[anchor=north west] {$\vec B$};
+    \draw (15.78,69.88) node[anchor=north west] {$dl$};
+    \draw [->] (17.2,83.8) -- (18.6,83.8);
+    \draw(17.8,83.8) circle (0.2cm);
+    \draw (17.94,83.97)-- (17.95,83.93);
+    \draw (17.95,83.93)-- (17.91,83.94);
+    \draw (18.44,84.06) node[anchor=north west] {$\vec B$};
+    \draw (8,94)-- (8,92);
+    \draw (8,92)-- (12,92);
+    \draw (12,92)-- (12,94);
+    \draw (12,94)-- (8,94);
+    \draw (13,94)-- (17,94);
+    \draw (17,92)-- (13,92);
+    \draw (13,94)-- (13,92);
+    \draw (17,94)-- (17,92);
+    \draw [shift={(8.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+    \draw [shift={(8.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+    \draw [shift={(11.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+    \draw [shift={(11.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+    \draw (13,94)-- (13,92);
+    \draw (13,92)-- (17,92);
+    \draw (17,92)-- (17,94);
+    \draw (17,94)-- (13,94);
+    \draw [shift={(13.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+    \draw [shift={(13.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+    \draw [shift={(16.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+    \draw [shift={(16.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+    \draw [->] (8.68,93.26) -- (8.24,93.7);
+    \draw [->] (9,93.53) -- (8.62,93.89);
+    \draw [->] (8.46,92.58) -- (9,92);
+    \draw [->] (8.87,92.75) -- (9.27,92.29);
+    \draw [->] (9.98,93.51) -- (10.01,92.8);
+    \draw [->] (10.2,93.51) -- (10.28,92.8);
+    \draw [->] (10.28,92.15) -- (11.04,92.48);
+    \draw [->] (10.89,92.15) -- (11.57,92.36);
+    \draw [->] (11.26,93.56) -- (11.61,92.96);
+    \draw [->] (11.57,93.7) -- (11.88,93.15);
+    \draw [->] (13.28,93.73) -- (14.18,93.75);
+    \draw [->] (13.17,93.45) -- (14.07,93.46);
+    \draw [->] (13.46,92.78) -- (14.36,92.8);
+    \draw [->] (13.44,92.44) -- (14.34,92.45);
+    \draw [->] (15.12,92.4) -- (16.02,92.42);
+    \draw [->] (15.12,92.17) -- (16.02,92.18);
+    \draw [->] (15.84,93.72) -- (16.75,93.73);
+    \draw [->] (15.89,93.42) -- (16.79,93.43);
+    \draw [->] (14.71,93.21) -- (15.33,93.22);
+    \draw [->] (14.75,92.91) -- (15.65,92.92);
+    \draw [->] (13,94.48) -- (17.01,94.46);
+    \draw (16.51,95.1) node[anchor=north west] {$B_0$};
+    \draw (9.27,92.05) node[anchor=north west] {$\vec B_0 = 0$};
+    \draw (14.6,92.01) node[anchor=north west] {$\vec B_0 \neq 0$};
+    \begin{scriptsize}
+    \draw[color=fftttt] (7.52,99.3) node {$\alpha$};
+    \end{scriptsize}
+    \end{tikzpicture}
+
+    \end{center}
+
+    \item Ферримагнетики состоят из двух слоев --- из более намагниченного внешнего слоя и слабо намагниченного внутреннего слоя, направленного противоположно внешнему слою.
+    \begin{center}
+
+        \definecolor{qqwuqq}{rgb}{0,0.39,0}
+        \definecolor{wwqqff}{rgb}{0.4,0,1}
+        \definecolor{qqccqq}{rgb}{0,0.8,0}
+        \definecolor{qqqqff}{rgb}{0,0,1}
+        \definecolor{fftttt}{rgb}{1,0.2,0.2}
+        \definecolor{ttfftt}{rgb}{0.2,1,0.2}
+        \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+        \clip(12.47,111.74) rectangle (26.06,118.5);
+        \fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+        \draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.78) arc (57.75:89.85:0.78) -- cycle;
+        \draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.7) arc (-129.81:-90:0.7) -- cycle;
+        \draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.78) arc (50.19:90:0.78) -- cycle;
+        \draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.52) arc (-149.04:-129.81:0.52) -- cycle;
+        \draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.52) arc (117.44:180.25:0.52) -- cycle;
+        \draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.52) arc (-47.84:-3.25:0.52) -- cycle;
+        \draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.52) arc (-0.48:37.66:0.52) -- cycle;
+        \draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.52) arc (10.7:43.65:0.52) -- cycle;
+        \draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+        \draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+        \draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+        \draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+        \draw [->] (6.25,4.5) -- (6.25,5.48);
+        \draw [->] (7.72,6.84) -- (8.23,7.21);
+        \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+        \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+        \draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+        \draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+        \draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+        \draw (4.57,7.36)-- (4.7,7.31);
+        \draw (4.57,7.36)-- (4.71,7.42);
+        \draw (7.91,7.26) node[anchor=north west] {$d \vec B$};
+        \draw (4.79,7.87) node[anchor=north west] {$i$};
+        \draw (5.87,5.5) node[anchor=north west] {$d \vec l$};
+        \draw (6.97,5.76) node[anchor=north west] {$\vec r$};
+        \draw [->] (6.25,4.5) -- (7.23,6.06);
+        \draw (7.7,6.74) node[anchor=north west] {$A$};
+        \draw [->] (9,17) -- (9,24);
+        \draw [->] (9,17) -- (9,20);
+        \draw (9,17)-- (14,23);
+        \draw [->,color=qqqqff] (11,23) -- (9,23);
+        \draw [->,color=qqqqff] (11,23) -- (14,23);
+        \draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+        \draw (14,23)-- (14,17);
+        \draw (9,20)-- (10.67,19);
+        \draw [shift={(14,23)},color=wwqqff] (-149.04:0.52) arc (-149.04:-129.81:0.52);
+        \draw [shift={(14,23)},color=wwqqff] (-149.04:0.44) arc (-149.04:-129.81:0.44);
+        \draw [shift={(14,23)},color=wwqqff] (-149.04:0.35) arc (-149.04:-129.81:0.35);
+        \draw [color=qqqqff](10.9,23.01) node[anchor=north west] {$b$};
+        \draw (8.48,23.91) node[anchor=north west] {$i$};
+        \draw (8.5,18.98) node[anchor=north west] {$d \vec l$};
+        \draw [color=qqccqq](9.11,18.62) node[anchor=north west] {$\alpha$};
+        \draw [color=qqccqq](13.45,22.57) node[anchor=north west] {$\alpha$};
+        \draw (10,19.82) node[anchor=north west] {x};
+        \draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+        \draw [->] (11.84,44.35) -- (11.86,46.01);
+        \draw [->] (14.01,44.36) -- (13.86,44.99);
+        \draw (11.84,44.35)-- (14.01,44.36);
+        \draw (11.84,44.35)-- (10.5,44.83);
+        \draw (11.17,44.99) node[anchor=north west] {$R$};
+        \draw (12.75,44.54) node[anchor=north west] {$\vec r$};
+        \draw (13.06,43.78)-- (13.2,43.79);
+        \draw (13.2,43.79)-- (13.08,43.73);
+        \draw (12.93,44.09) node[anchor=north west] {$i$};
+        \draw (13.94,44.96) node[anchor=north west] {$d \vec l$};
+        \draw (11.92,45.55) node[anchor=north west] {$\vec B $};
+        \draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+        \draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+        \draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+        \draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+        \draw [->] (14.91,59.59) -- (13.5,58.5);
+        \draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+        \draw [->] (14.91,59.59) -- (16.23,58.13);
+        \draw [color=qqccqq](15.29,60.13) node[anchor=north west] {$d \vec l$};
+        \draw (13.71,59.42) node[anchor=north west] {$\vec r$};
+        \draw (15.9,59.26) node[anchor=north west] {$\vec B$};
+        \draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+        \draw (14.82,59.16) node[anchor=north west] {$dl_B$};
+        \draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.47cm and 0.33cm);
+        \draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.45cm and 0.3cm);
+        \draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+        \draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+        \draw (14.25,69.48)-- (17.28,70.05);
+        \draw [->] (14.25,69.48) -- (15.46,70.63);
+        \draw (14.72,70.57) node[anchor=north west] {$\vec B$};
+        \draw (15.78,69.89) node[anchor=north west] {$dl$};
+        \draw [->] (17.2,83.8) -- (18.6,83.8);
+        \draw(17.8,83.8) circle (0.2cm);
+        \draw (17.94,83.97)-- (17.95,83.93);
+        \draw (17.95,83.93)-- (17.91,83.94);
+        \draw (18.43,84.09) node[anchor=north west] {$\vec B$};
+        \draw (8,94)-- (8,92);
+        \draw (8,92)-- (12,92);
+        \draw (12,92)-- (12,94);
+        \draw (12,94)-- (8,94);
+        \draw (13,94)-- (17,94);
+        \draw (17,92)-- (13,92);
+        \draw (13,94)-- (13,92);
+        \draw (17,94)-- (17,92);
+        \draw [shift={(8.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+        \draw [shift={(8.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+        \draw [shift={(11.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+        \draw [shift={(11.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+        \draw (13,94)-- (13,92);
+        \draw (13,92)-- (17,92);
+        \draw (17,92)-- (17,94);
+        \draw (17,94)-- (13,94);
+        \draw [shift={(13.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+        \draw [shift={(13.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+        \draw [shift={(16.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+        \draw [shift={(16.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+        \draw [->] (8.68,93.26) -- (8.24,93.7);
+        \draw [->] (9,93.53) -- (8.62,93.89);
+        \draw [->] (8.46,92.58) -- (9,92);
+        \draw [->] (8.87,92.75) -- (9.27,92.29);
+        \draw [->] (9.98,93.51) -- (10.01,92.8);
+        \draw [->] (10.2,93.51) -- (10.28,92.8);
+        \draw [->] (10.28,92.15) -- (11.04,92.48);
+        \draw [->] (10.89,92.15) -- (11.57,92.36);
+        \draw [->] (11.26,93.56) -- (11.61,92.96);
+        \draw [->] (11.57,93.7) -- (11.88,93.15);
+        \draw [->] (13.28,93.73) -- (14.18,93.75);
+        \draw [->] (13.17,93.45) -- (14.07,93.46);
+        \draw [->] (13.46,92.78) -- (14.36,92.8);
+        \draw [->] (13.44,92.44) -- (14.34,92.45);
+        \draw [->] (15.12,92.4) -- (16.02,92.42);
+        \draw [->] (15.12,92.17) -- (16.02,92.18);
+        \draw [->] (15.84,93.72) -- (16.75,93.73);
+        \draw [->] (15.89,93.42) -- (16.79,93.43);
+        \draw [->] (14.71,93.21) -- (15.33,93.22);
+        \draw [->] (14.75,92.91) -- (15.65,92.92);
+        \draw [->] (13,94.48) -- (17.01,94.46);
+        \draw (16.51,95.12) node[anchor=north west] {$B_0$};
+        \draw (9.28,92.07) node[anchor=north west] {$\vec B_0 = 0$};
+        \draw (14.6,92.03) node[anchor=north west] {$\vec B_0 \neq 0$};
+        \draw [line width=1.2pt] (13,117)-- (13,113);
+        \draw [line width=1.2pt] (17,113)-- (19,114);
+        \draw [line width=1.2pt] (19,114)-- (19,118);
+        \draw [line width=1.2pt] (19,118)-- (17,117);
+        \draw [line width=1.2pt] (17,117)-- (17,113);
+        \draw [line width=1.2pt] (13,117)-- (17,117);
+        \draw [line width=1.2pt] (13,113)-- (17,113);
+        \draw [line width=1.2pt] (13,117)-- (15,118);
+        \draw [line width=1.2pt] (19,118)-- (15,118);
+        \draw (13,113)-- (15,114);
+        \draw [dash pattern=on 1pt off 1pt] (15,118)-- (15,114);
+        \draw [dash pattern=on 1pt off 1pt] (15,114)-- (19,114);
+        \draw [color=qqccqq] (14.5,116)-- (15.28,116.37);
+        \draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (14.5,114.5);
+        \draw [line width=1.2pt,color=qqccqq] (14.5,114.5)-- (16,114.5);
+        \draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (16,116);
+        \draw [line width=1.2pt,color=qqccqq] (16,116)-- (16,114.5);
+        \draw [color=qqccqq] (16,116)-- (16.67,116.36);
+        \draw [color=qqccqq] (15.28,116.37)-- (16.67,116.36);
+        \draw [color=qqccqq] (15.28,116.37)-- (15.25,114.86);
+        \draw (14.5,114.5)-- (15.25,114.86);
+        \draw [color=qqccqq] (16.67,116.36)-- (16.66,114.86);
+        \draw [color=qqccqq] (16,114.5)-- (16.66,114.86);
+        \draw (16.66,114.86)-- (15.25,114.86);
+        \draw [color=qqccqq] (14.5,114.5)-- (13,113);
+        \draw [color=qqccqq] (14.5,116)-- (13,117);
+        \draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.28,116.37)-- (15,118);
+        \draw [color=qqccqq] (16,114.5)-- (17,113);
+        \draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.66,114.86)-- (19,114);
+        \draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.67,116.36)-- (19,118);
+        \draw [color=qqccqq] (16,116)-- (17,117);
+        \draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.25,114.86)-- (15,114);
+        \draw (20,117)-- (25,117);
+        \draw (20,115)-- (25,115);
+        \draw (25,117)-- (25,115);
+        \draw (20,117)-- (20,115);
+        \draw (21,117)-- (21,115);
+        \draw (22,117)-- (22,115);
+        \draw (23,117)-- (23,115);
+        \draw (24,117)-- (24,115);
+        \draw [->] (20.5,115.5) -- (20.5,116.65);
+        \draw [->] (22.51,115.52) -- (22.49,116.72);
+        \draw [->] (24.58,115.49) -- (24.56,116.76);
+        \draw [->,color=qqccqq] (21.44,116.2) -- (21.44,115.4);
+        \draw [->,color=qqccqq] (23.55,116.16) -- (23.59,115.42);
+        \begin{scriptsize}
+        \draw[color=fftttt] (11.98,120.82) node {$\alpha$};
+        \end{scriptsize}
+        \end{tikzpicture}
+
+    \end{center}
+
+    Таким образом, они обладают разными по модулю магнитными моментами.Ферримагнетики могут быть диэлектриком и полупроводником.
+
+    \item Антиферромагнетики также обладают доменной структурой, но их соседние молекулы противоположно направлены.При изменении внешнего магнитного поля изменяется сопротивление антиферромагнетика.
+\end{itemize}
+
+\subsection{Действие магнитного поля на токи и заряды}
+
+Возьмем элемент проводника с током $dl$, на него соответсвенно действует сила $df$
+\[d \vec f = ki \cdot [d \vec l, \vec B]\]
+
+Тогда сила, действующая на единицу длины проводника:
+\[d \vec f = i \cdot [d \vec l, \vec B]\]
+\begin{center}
+    --- \textit{\textbf{Закон Ампера}}
+\end{center}
+\subsubsection{Сила Лоренца}
+
+Скажем, что $i = j \cdot S$, тогда
+\[d \vec F = S \cdot dl \cdot [\vec j, \vec B] \Rightarrow\]
+\begin{center}
+    где $d \vec l$ и $ \vec j$ направлены в одну сторону
+\end{center}
+\[d \vec f = dV \cdot [\vec j, \vec B] \langle \text{в силу} \vec j = q \cdot n \cdot V \rangle \Rightarrow \]
+\[d \vec f = q \cdot [\vec V, \vec B] n \cdot dV \Rightarrow \frac{df}{dN} = F_l = q[\vec V, \vec B]\]
+
+Сила с которой магнитное поле действует на движущуюся заряженную частицу:
+\[F_l = q[\vec V, \vec B]\]
+\begin{center}
+    --- \textit{\textbf{Сила Лоренца}}
+\end{center}
+
+где $\vec B$ - индукция магнитного поля, $\vec V$ - скорость частицы.
+
+\subsection{Контур с током в магнитном поле}
+Пусть имеется некоторый контур с током, направленным изначально вниз:
+\begin{center}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(23.95,149.63) rectangle (34.15,156.83);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.78) arc (57.75:89.85:0.78) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.7) arc (-129.81:-90:0.7) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.78) arc (50.19:90:0.78) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.52) arc (-149.04:-129.81:0.52) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.52) arc (117.44:180.25:0.52) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.52) arc (-47.84:-3.25:0.52) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.52) arc (-0.48:37.66:0.52) -- cycle;
+\draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.52) arc (10.7:43.65:0.52) -- cycle;
+\draw [shift={(25,153)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (45:0.52) arc (45:90:0.52) -- cycle;
+\draw [shift={(33,154)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-135:0.52) arc (-135:-90:0.52) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (6.26,8.01)-- (6.25,4.5);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.26) node[anchor=north west] {$d \vec B$};
+\draw (4.79,7.87) node[anchor=north west] {$i$};
+\draw (5.87,5.5) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.76) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.7,6.74) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (14,23)-- (14,17);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.52) arc (-149.04:-129.81:0.52);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.44) arc (-149.04:-129.81:0.44);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.35) arc (-149.04:-129.81:0.35);
+\draw [color=qqqqff](10.9,23.01) node[anchor=north west] {$b$};
+\draw (8.48,23.91) node[anchor=north west] {$i$};
+\draw (8.5,18.98) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.62) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.45,22.57) node[anchor=north west] {$\alpha$};
+\draw (10,19.82) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.99) node[anchor=north west] {$R$};
+\draw (12.75,44.54) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.93,44.09) node[anchor=north west] {$i$};
+\draw (13.94,44.96) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.55) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.29,60.13) node[anchor=north west] {$d \vec l$};
+\draw (13.71,59.42) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.26) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.82,59.16) node[anchor=north west] {$dl_B$};
+\draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.47cm and 0.33cm);
+\draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.45cm and 0.3cm);
+\draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+\draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+\draw (14.25,69.48)-- (17.28,70.05);
+\draw [->] (14.25,69.48) -- (15.46,70.63);
+\draw (14.72,70.57) node[anchor=north west] {$\vec B$};
+\draw (15.78,69.89) node[anchor=north west] {$dl$};
+\draw [->] (17.2,83.8) -- (18.6,83.8);
+\draw(17.8,83.8) circle (0.2cm);
+\draw (17.94,83.97)-- (17.95,83.93);
+\draw (17.95,83.93)-- (17.91,83.94);
+\draw (18.43,84.09) node[anchor=north west] {$\vec B$};
+\draw (8,94)-- (8,92);
+\draw (8,92)-- (12,92);
+\draw (12,92)-- (12,94);
+\draw (12,94)-- (8,94);
+\draw (13,94)-- (17,94);
+\draw (17,92)-- (13,92);
+\draw (13,94)-- (13,92);
+\draw (17,94)-- (17,92);
+\draw [shift={(8.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(8.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(11.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(11.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw (13,94)-- (13,92);
+\draw (13,92)-- (17,92);
+\draw (17,92)-- (17,94);
+\draw (17,94)-- (13,94);
+\draw [shift={(13.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(13.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(16.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(16.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw [->] (8.68,93.26) -- (8.24,93.7);
+\draw [->] (9,93.53) -- (8.62,93.89);
+\draw [->] (8.46,92.58) -- (9,92);
+\draw [->] (8.87,92.75) -- (9.27,92.29);
+\draw [->] (9.98,93.51) -- (10.01,92.8);
+\draw [->] (10.2,93.51) -- (10.28,92.8);
+\draw [->] (10.28,92.15) -- (11.04,92.48);
+\draw [->] (10.89,92.15) -- (11.57,92.36);
+\draw [->] (11.26,93.56) -- (11.61,92.96);
+\draw [->] (11.57,93.7) -- (11.88,93.15);
+\draw [->] (13.28,93.73) -- (14.18,93.75);
+\draw [->] (13.17,93.45) -- (14.07,93.46);
+\draw [->] (13.46,92.78) -- (14.36,92.8);
+\draw [->] (13.44,92.44) -- (14.34,92.45);
+\draw [->] (15.12,92.4) -- (16.02,92.42);
+\draw [->] (15.12,92.17) -- (16.02,92.18);
+\draw [->] (15.84,93.72) -- (16.75,93.73);
+\draw [->] (15.89,93.42) -- (16.79,93.43);
+\draw [->] (14.71,93.21) -- (15.33,93.22);
+\draw [->] (14.75,92.91) -- (15.65,92.92);
+\draw [->] (13,94.48) -- (17.01,94.46);
+\draw (16.51,95.12) node[anchor=north west] {$B_0$};
+\draw (9.28,92.07) node[anchor=north west] {$\vec B_0 = 0$};
+\draw (14.6,92.03) node[anchor=north west] {$\vec B_0 \neq 0$};
+\draw [line width=1.2pt] (13,117)-- (13,113);
+\draw [line width=1.2pt] (17,113)-- (19,114);
+\draw [line width=1.2pt] (19,114)-- (19,118);
+\draw [line width=1.2pt] (19,118)-- (17,117);
+\draw [line width=1.2pt] (17,117)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (17,117);
+\draw [line width=1.2pt] (13,113)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (15,118);
+\draw [line width=1.2pt] (19,118)-- (15,118);
+\draw (13,113)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,118)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,114)-- (19,114);
+\draw [color=qqccqq] (14.5,116)-- (15.28,116.37);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (14.5,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,114.5)-- (16,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (16,116);
+\draw [line width=1.2pt,color=qqccqq] (16,116)-- (16,114.5);
+\draw [color=qqccqq] (16,116)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (15.25,114.86);
+\draw (14.5,114.5)-- (15.25,114.86);
+\draw [color=qqccqq] (16.67,116.36)-- (16.66,114.86);
+\draw [color=qqccqq] (16,114.5)-- (16.66,114.86);
+\draw (16.66,114.86)-- (15.25,114.86);
+\draw [color=qqccqq] (14.5,114.5)-- (13,113);
+\draw [color=qqccqq] (14.5,116)-- (13,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.28,116.37)-- (15,118);
+\draw [color=qqccqq] (16,114.5)-- (17,113);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.66,114.86)-- (19,114);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.67,116.36)-- (19,118);
+\draw [color=qqccqq] (16,116)-- (17,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.25,114.86)-- (15,114);
+\draw (20,117)-- (25,117);
+\draw (20,115)-- (25,115);
+\draw (25,117)-- (25,115);
+\draw (20,117)-- (20,115);
+\draw (21,117)-- (21,115);
+\draw (22,117)-- (22,115);
+\draw (23,117)-- (23,115);
+\draw (24,117)-- (24,115);
+\draw [->] (20.5,115.5) -- (20.5,116.65);
+\draw [->] (22.51,115.52) -- (22.49,116.72);
+\draw [->] (24.58,115.49) -- (24.56,116.76);
+\draw [->,color=qqccqq] (21.44,116.2) -- (21.44,115.4);
+\draw [->,color=qqccqq] (23.55,116.16) -- (23.59,115.42);
+\draw (25,156)-- (33,156);
+\draw (25,156)-- (25,151);
+\draw (33,156)-- (33,151);
+\draw (33,151)-- (25,151);
+\draw [dash pattern=on 1pt off 1pt] (29.01,156.46)-- (28.99,150.38);
+\draw [->] (25,150) -- (31,150);
+\draw [->] (32,151) -- (26,151);
+\draw [->] (33,155) -- (33,153);
+\draw [->] (27,156) -- (31,156);
+\draw [->] (25,153) -- (25,155);
+\draw (24.6,151.53) node[anchor=north west] {$1$};
+\draw (24.72,156.46) node[anchor=north west] {$2$};
+\draw (33.2,156.44) node[anchor=north west] {$3$};
+\draw (33.17,151.57) node[anchor=north west] {$4$};
+\draw (27.63,151.65) node[anchor=north west] {$b$};
+\draw [->,color=qqccqq] (25,153) -- (26,154);
+\draw [->,color=qqccqq] (33,154) -- (32,153);
+\draw [->,color=qqccqq] (33,151) -- (33,150);
+\draw [->,color=qqccqq] (25,151) -- (25,150);
+\draw (25.57,153.71) node[anchor=north west] {$\vec F_{1,2}$};
+\draw (31.78,154.18) node[anchor=north west] {$\vec F_{3,4}$};
+\draw (25.1,150.9) node[anchor=north west] {$M_{1,2}$};
+\draw (32.33,150.85) node[anchor=north west] {$M_{3,4}$};
+\draw (30.21,150.63) node[anchor=north west] {$\vec B$};
+\begin{scriptsize}
+\draw[color=fftttt] (22.7,157.79) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
+Используем закон Ампера:
+\[F_{1,2} = i \cdot a \cdot b ; F_{3,4} = i \cdot a \cdot B\]
+\[F_{2,3} = 0 ; F_{4,1} = 0\]
+Силы стремятся повернуть контур вокруг оси. проходящей через центр:
+\[M_{1,2} = F_{1,2} \cdot \frac{b}{2} ; M_{3,4} = F_{3,4} \cdot \frac{b}{2}\]
+Тогда 
+\[M = M_{1,2} + M_{3,4} = i \cdot a \cdot b \cdot B = i \cdot S \cdot B = P_m \cdot B 
+\Rightarrow B = \frac{M_{max}}{P_m}\]
+
+\begin{center}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(21.45,178.67) rectangle (36.92,184.28);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.69) arc (57.75:89.85:0.69) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.61) arc (-129.81:-90:0.61) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.69) arc (50.19:90:0.69) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.46) arc (-149.04:-129.81:0.46) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.46) arc (117.44:180.25:0.46) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.46) arc (-47.84:-3.25:0.46) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.46) arc (-0.48:37.66:0.46) -- cycle;
+\draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.46) arc (10.7:43.65:0.46) -- cycle;
+\draw [shift={(25,153)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (45:0.46) arc (45:90:0.46) -- cycle;
+\draw [shift={(33,154)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-135:0.46) arc (-135:-90:0.46) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.23) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.84) node[anchor=north west] {$i$};
+\draw (5.86,5.46) node[anchor=north west] {$d \vec l$};
+\draw (6.96,5.74) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.71,6.74) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (14,23)-- (14,17);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.46) arc (-149.04:-129.81:0.46);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.38) arc (-149.04:-129.81:0.38);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.31) arc (-149.04:-129.81:0.31);
+\draw [color=qqqqff](10.91,22.97) node[anchor=north west] {$b$};
+\draw (8.49,23.89) node[anchor=north west] {$i$};
+\draw (8.5,18.96) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.58) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.44,22.54) node[anchor=north west] {$\alpha$};
+\draw (10,19.8) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.17,44.97) node[anchor=north west] {$R$};
+\draw (12.74,44.51) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.93,44.07) node[anchor=north west] {$i$};
+\draw (13.95,44.94) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.53) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.31,60.11) node[anchor=north west] {$d \vec l$};
+\draw (13.72,59.39) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.24) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.83,59.14) node[anchor=north west] {$dl_B$};
+\draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.47cm and 0.33cm);
+\draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.45cm and 0.3cm);
+\draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+\draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+\draw (14.25,69.48)-- (17.28,70.05);
+\draw [->] (14.25,69.48) -- (15.46,70.63);
+\draw (14.73,70.54) node[anchor=north west] {$\vec B$};
+\draw (15.78,69.87) node[anchor=north west] {$dl$};
+\draw [->] (17.2,83.8) -- (18.6,83.8);
+\draw(17.8,83.8) circle (0.2cm);
+\draw (17.94,83.97)-- (17.95,83.93);
+\draw (17.95,83.93)-- (17.91,83.94);
+\draw (18.43,84.06) node[anchor=north west] {$\vec B$};
+\draw (8,94)-- (8,92);
+\draw (8,92)-- (12,92);
+\draw (12,92)-- (12,94);
+\draw (12,94)-- (8,94);
+\draw (13,94)-- (17,94);
+\draw (17,92)-- (13,92);
+\draw (13,94)-- (13,92);
+\draw (17,94)-- (17,92);
+\draw [shift={(8.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(8.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(11.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(11.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw (13,94)-- (13,92);
+\draw (13,92)-- (17,92);
+\draw (17,92)-- (17,94);
+\draw (17,94)-- (13,94);
+\draw [shift={(13.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(13.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(16.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(16.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw [->] (8.68,93.26) -- (8.24,93.7);
+\draw [->] (9,93.53) -- (8.62,93.89);
+\draw [->] (8.46,92.58) -- (9,92);
+\draw [->] (8.87,92.75) -- (9.27,92.29);
+\draw [->] (9.98,93.51) -- (10.01,92.8);
+\draw [->] (10.2,93.51) -- (10.28,92.8);
+\draw [->] (10.28,92.15) -- (11.04,92.48);
+\draw [->] (10.89,92.15) -- (11.57,92.36);
+\draw [->] (11.26,93.56) -- (11.61,92.96);
+\draw [->] (11.57,93.7) -- (11.88,93.15);
+\draw [->] (13.28,93.73) -- (14.18,93.75);
+\draw [->] (13.17,93.45) -- (14.07,93.46);
+\draw [->] (13.46,92.78) -- (14.36,92.8);
+\draw [->] (13.44,92.44) -- (14.34,92.45);
+\draw [->] (15.12,92.4) -- (16.02,92.42);
+\draw [->] (15.12,92.17) -- (16.02,92.18);
+\draw [->] (15.84,93.72) -- (16.75,93.73);
+\draw [->] (15.89,93.42) -- (16.79,93.43);
+\draw [->] (14.71,93.21) -- (15.33,93.22);
+\draw [->] (14.75,92.91) -- (15.65,92.92);
+\draw [->] (13,94.48) -- (17.01,94.46);
+\draw (16.51,95.09) node[anchor=north west] {$B_0$};
+\draw (9.28,92.05) node[anchor=north west] {$\vec B_0 = 0$};
+\draw (14.6,92.01) node[anchor=north west] {$\vec B_0 \neq 0$};
+\draw [line width=1.2pt] (13,117)-- (13,113);
+\draw [line width=1.2pt] (17,113)-- (19,114);
+\draw [line width=1.2pt] (19,114)-- (19,118);
+\draw [line width=1.2pt] (19,118)-- (17,117);
+\draw [line width=1.2pt] (17,117)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (17,117);
+\draw [line width=1.2pt] (13,113)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (15,118);
+\draw [line width=1.2pt] (19,118)-- (15,118);
+\draw (13,113)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,118)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,114)-- (19,114);
+\draw [color=qqccqq] (14.5,116)-- (15.28,116.37);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (14.5,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,114.5)-- (16,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (16,116);
+\draw [line width=1.2pt,color=qqccqq] (16,116)-- (16,114.5);
+\draw [color=qqccqq] (16,116)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (15.25,114.86);
+\draw (14.5,114.5)-- (15.25,114.86);
+\draw [color=qqccqq] (16.67,116.36)-- (16.66,114.86);
+\draw [color=qqccqq] (16,114.5)-- (16.66,114.86);
+\draw (16.66,114.86)-- (15.25,114.86);
+\draw [color=qqccqq] (14.5,114.5)-- (13,113);
+\draw [color=qqccqq] (14.5,116)-- (13,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.28,116.37)-- (15,118);
+\draw [color=qqccqq] (16,114.5)-- (17,113);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.66,114.86)-- (19,114);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.67,116.36)-- (19,118);
+\draw [color=qqccqq] (16,116)-- (17,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.25,114.86)-- (15,114);
+\draw (20,117)-- (25,117);
+\draw (20,115)-- (25,115);
+\draw (25,117)-- (25,115);
+\draw (20,117)-- (20,115);
+\draw (21,117)-- (21,115);
+\draw (22,117)-- (22,115);
+\draw (23,117)-- (23,115);
+\draw (24,117)-- (24,115);
+\draw [->] (20.5,115.5) -- (20.5,116.65);
+\draw [->] (22.51,115.52) -- (22.49,116.72);
+\draw [->] (24.58,115.49) -- (24.56,116.76);
+\draw [->,color=qqccqq] (21.44,116.2) -- (21.44,115.4);
+\draw [->,color=qqccqq] (23.55,116.16) -- (23.59,115.42);
+\draw (25,156)-- (33,156);
+\draw (25,156)-- (25,151);
+\draw (33,156)-- (33,151);
+\draw (33,151)-- (25,151);
+\draw [dash pattern=on 1pt off 1pt] (29.01,156.46)-- (28.99,150.38);
+\draw [->] (25,150) -- (31,150);
+\draw [->] (32,151) -- (26,151);
+\draw [->] (33,155) -- (33,153);
+\draw [->] (27,156) -- (31,156);
+\draw [->] (25,153) -- (25,155);
+\draw (24.59,151.51) node[anchor=north west] {$1$};
+\draw (24.72,156.43) node[anchor=north west] {$2$};
+\draw (33.21,156.42) node[anchor=north west] {$3$};
+\draw (33.17,151.54) node[anchor=north west] {$4$};
+\draw (27.63,151.63) node[anchor=north west] {$b$};
+\draw [->,color=qqccqq] (25,153) -- (26,154);
+\draw [->,color=qqccqq] (33,154) -- (32,153);
+\draw [->,color=qqccqq] (33,151) -- (33,150);
+\draw [->,color=qqccqq] (25,151) -- (25,150);
+\draw (25.57,153.69) node[anchor=north west] {$\vec F_{1,2}$};
+\draw (31.78,154.14) node[anchor=north west] {$\vec F_{3,4}$};
+\draw (25.1,150.88) node[anchor=north west] {$M_{1,2}$};
+\draw (32.33,150.82) node[anchor=north west] {$M_{3,4}$};
+\draw (30.21,150.61) node[anchor=north west] {$\vec B$};
+\draw (23,183)-- (23,180);
+\draw (23,183)-- (28,183);
+\draw (28,183)-- (28,180);
+\draw (28,180)-- (23,180);
+\draw (31,183)-- (36,183);
+\draw (36,183)-- (36,180);
+\draw (31,183)-- (31,180);
+\draw (31,180)-- (36,180);
+\draw [->,color=qqccqq] (25.73,183) -- (25.77,184.02);
+\draw [->,color=qqccqq] (23,181) -- (22,181);
+\draw [->,color=qqccqq] (25,180) -- (25,179);
+\draw [->,color=qqccqq] (28,181) -- (29,181);
+\draw [->,color=qqccqq] (33.52,183) -- (33.52,181.93);
+\draw [->,color=qqccqq] (31,181) -- (32,181);
+\draw [->,color=qqccqq] (36,181) -- (34.7,180.99);
+\draw [->,color=qqccqq] (33.36,180) -- (33.36,181.17);
+\draw(24.36,181.47) circle (0.21cm);
+\draw (24.24,181.55)-- (24.44,181.41);
+\draw (24.46,181.57)-- (24.24,181.4);
+\draw [->] (23,180.5) -- (23,182.5);
+\draw [->] (26.5,180) -- (23.58,180);
+\draw [->] (28,182.5) -- (28,180.5);
+\draw [->] (24,183) -- (27.43,183);
+\draw (22.44,180.73) node[anchor=north west] {$1$};
+\draw (22.52,183.26) node[anchor=north west] {$2$};
+\draw (27.48,183.2) node[anchor=north west] {$3$};
+\draw (27.4,180.9) node[anchor=north west] {$4$};
+\draw (24.21,181.31) node[anchor=north west] {$\vec B$};
+\draw [color=qqccqq](25.39,183.81) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](22.34,181.57) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](25.13,179.78) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](28.51,181.51) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](31.32,181.69) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](33,182.91) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](33.55,180.91) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](35.3,181.69) node[anchor=north west] {$\vec F$};
+\draw(32.08,181.58) circle (0.22cm);
+\draw (30.53,180.84) node[anchor=north west] {$1$};
+\draw (30.51,183.31) node[anchor=north west] {$2$};
+\draw (35.52,183.23) node[anchor=north west] {$3$};
+\draw (35.52,180.79) node[anchor=north west] {$4$};
+\draw (32.04,181.43) node[anchor=north west] {$\vec B$};
+\begin{scriptsize}
+\draw[color=fftttt] (20.75,186.16) node {$\alpha$};
+\fill [color=black] (32.09,181.6) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\subsection{Электромагнитная индукция}
+\subsubsection{Закон электромагнитной индукции}
+\textit{\textbf{Формулировка:} Во всяком замкнутом проводящем контуре, при изменении потока магнитной индукции через поверхность,
+ ограниченную этим контуром возникает электрический ток, называемый индукционным}
+\[\Phi_b = \iint_{S} \vec B \cdot \vec n dS\]
+\begin{center}
+    $[\Phi_b] = \text{Вб} = \text{Вебер}$
+\end{center}
+\subsubsection{Правило Ленца}
+\textit{\textbf{Формулировка:} Индукционный ток всегда напрвлен так, чтобы противодействовать причине его вызывающей}
+
+При увеличении тока в реостате $\vec B$ растет и создается ток противоположного направления.Расчитаем ЭДС инукционного тока.
+
+Пусть имеется проводник:
+\begin{center}
+
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\definecolor{wwqqff}{rgb}{0.4,0,1}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{fftttt}{rgb}{1,0.2,0.2}
+\definecolor{ttfftt}{rgb}{0.2,1,0.2}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(24.3,200.64) rectangle (31.8,205.49);
+\fill[color=ttfftt,fill=ttfftt,fill opacity=0.1] (6.25,4.5) -- (7.72,6.84) -- (6.26,7.01) -- cycle;
+\draw [shift={(6.25,4.5)},color=fftttt,fill=fftttt,fill opacity=0.1] (0,0) -- (57.75:0.68) arc (57.75:89.85:0.68) -- cycle;
+\draw [shift={(14,23)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-129.81:0.61) arc (-129.81:-90:0.61) -- cycle;
+\draw [shift={(9,17)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (50.19:0.68) arc (50.19:90:0.68) -- cycle;
+\draw [shift={(14,23)},color=wwqqff,fill=wwqqff,fill opacity=0.1] (0,0) -- (-149.04:0.46) arc (-149.04:-129.81:0.46) -- cycle;
+\draw [shift={(14.01,44.36)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (117.44:0.46) arc (117.44:180.25:0.46) -- cycle;
+\draw [shift={(14.91,59.59)},color=qqccqq,fill=qqccqq,fill opacity=0.1] (0,0) -- (-47.84:0.46) arc (-47.84:-3.25:0.46) -- cycle;
+\draw [shift={(13.5,58.5)},color=qqqqff,fill=qqqqff,fill opacity=0.1] (0,0) -- (-0.48:0.46) arc (-0.48:37.66:0.46) -- cycle;
+\draw [shift={(14.25,69.48)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (10.7:0.46) arc (10.7:43.65:0.46) -- cycle;
+\draw [shift={(25,153)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (45:0.46) arc (45:90:0.46) -- cycle;
+\draw [shift={(33,154)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (-135:0.46) arc (-135:-90:0.46) -- cycle;
+\draw [rotate around={0:(6.27,7.02)},dash pattern=on 1pt off 1pt] (6.27,7.02) ellipse (1.6cm and 0.42cm);
+\draw [dash pattern=on 1pt off 1pt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt] (7.72,6.84)-- (6.26,7.01);
+\draw [->] (6.25,4.5) -- (6.25,5.48);
+\draw [->] (7.72,6.84) -- (8.23,7.21);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.25,4.5)-- (7.72,6.84);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (7.72,6.84)-- (6.26,7.01);
+\draw [dash pattern=on 1pt off 1pt,color=ttfftt] (6.26,7.01)-- (6.25,4.5);
+\draw [shift={(7.03,5.86)}] plot[domain=2.82:4.19,variable=\t]({1*1.57*cos(\t r)+0*1.57*sin(\t r)},{0*1.57*cos(\t r)+1*1.57*sin(\t r)});
+\draw [shift={(4.62,6.44)}] plot[domain=-0.09:1.62,variable=\t]({1*0.93*cos(\t r)+0*0.93*sin(\t r)},{0*0.93*cos(\t r)+1*0.93*sin(\t r)});
+\draw (4.57,7.36)-- (4.7,7.31);
+\draw (4.57,7.36)-- (4.71,7.42);
+\draw (7.91,7.24) node[anchor=north west] {$d \vec B$};
+\draw (4.8,7.83) node[anchor=north west] {$i$};
+\draw (5.86,5.46) node[anchor=north west] {$d \vec l$};
+\draw (6.97,5.74) node[anchor=north west] {$\vec r$};
+\draw [->] (6.25,4.5) -- (7.23,6.06);
+\draw (7.71,6.75) node[anchor=north west] {$A$};
+\draw [->] (9,17) -- (9,24);
+\draw [->] (9,17) -- (9,20);
+\draw (9,17)-- (14,23);
+\draw [->,color=qqqqff] (11,23) -- (9,23);
+\draw [->,color=qqqqff] (11,23) -- (14,23);
+\draw [dash pattern=on 1pt off 1pt] (14,23)-- (9,20);
+\draw (14,23)-- (14,17);
+\draw (9,20)-- (10.67,19);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.46) arc (-149.04:-129.81:0.46);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.38) arc (-149.04:-129.81:0.38);
+\draw [shift={(14,23)},color=wwqqff] (-149.04:0.3) arc (-149.04:-129.81:0.3);
+\draw [color=qqqqff](10.9,22.97) node[anchor=north west] {$b$};
+\draw (8.49,23.88) node[anchor=north west] {$i$};
+\draw (8.5,18.96) node[anchor=north west] {$d \vec l$};
+\draw [color=qqccqq](9.11,18.58) node[anchor=north west] {$\alpha$};
+\draw [color=qqccqq](13.44,22.53) node[anchor=north west] {$\alpha$};
+\draw (10.01,19.8) node[anchor=north west] {x};
+\draw [rotate around={-0.25:(11.95,44.33)}] (11.95,44.33) ellipse (2.06cm and 0.68cm);
+\draw [->] (11.84,44.35) -- (11.86,46.01);
+\draw [->] (14.01,44.36) -- (13.86,44.99);
+\draw (11.84,44.35)-- (14.01,44.36);
+\draw (11.84,44.35)-- (10.5,44.83);
+\draw (11.18,44.96) node[anchor=north west] {$R$};
+\draw (12.74,44.51) node[anchor=north west] {$\vec r$};
+\draw (13.06,43.78)-- (13.2,43.79);
+\draw (13.2,43.79)-- (13.08,43.73);
+\draw (12.94,44.07) node[anchor=north west] {$i$};
+\draw (13.94,44.93) node[anchor=north west] {$d \vec l$};
+\draw (11.92,45.53) node[anchor=north west] {$\vec B $};
+\draw [shift={(13.08,58.42)}] plot[domain=1.65:4.15,variable=\t]({1*1.09*cos(\t r)+0*1.09*sin(\t r)},{0*1.09*cos(\t r)+1*1.09*sin(\t r)});
+\draw [shift={(13.06,54.8)}] plot[domain=0.76:1.77,variable=\t]({1*2.76*cos(\t r)+0*2.76*sin(\t r)},{0*2.76*cos(\t r)+1*2.76*sin(\t r)});
+\draw [shift={(13.93,58.36)}] plot[domain=-0.97:0.27,variable=\t]({1*2*cos(\t r)+0*2*sin(\t r)},{0*2*cos(\t r)+1*2*sin(\t r)});
+\draw [shift={(14.06,57.45)}] plot[domain=0.67:2.05,variable=\t]({1*2.31*cos(\t r)+0*2.31*sin(\t r)},{0*2.31*cos(\t r)+1*2.31*sin(\t r)});
+\draw [->] (14.91,59.59) -- (13.5,58.5);
+\draw [->,color=qqccqq] (14.91,59.59) -- (16.5,59.5);
+\draw [->] (14.91,59.59) -- (16.23,58.13);
+\draw [color=qqccqq](15.31,60.12) node[anchor=north west] {$d \vec l$};
+\draw (13.71,59.39) node[anchor=north west] {$\vec r$};
+\draw (15.9,59.24) node[anchor=north west] {$\vec B$};
+\draw [dash pattern=on 1pt off 1pt] (13.5,58.5)-- (15.92,58.48);
+\draw (14.84,59.13) node[anchor=north west] {$dl_B$};
+\draw [rotate around={-55.56:(14.27,69.53)},dash pattern=on 1pt off 1pt] (14.27,69.53) ellipse (0.47cm and 0.33cm);
+\draw [rotate around={-64.94:(17.28,70.06)},dash pattern=on 1pt off 1pt] (17.28,70.06) ellipse (0.45cm and 0.3cm);
+\draw [dash pattern=on 1pt off 1pt] (14.07,69.95)-- (17.13,70.48);
+\draw [dash pattern=on 1pt off 1pt] (14.4,69.1)-- (17.4,69.63);
+\draw (14.25,69.48)-- (17.28,70.05);
+\draw [->] (14.25,69.48) -- (15.46,70.63);
+\draw (14.72,70.54) node[anchor=north west] {$\vec B$};
+\draw (15.78,69.87) node[anchor=north west] {$dl$};
+\draw [->] (17.2,83.8) -- (18.6,83.8);
+\draw(17.8,83.8) circle (0.2cm);
+\draw (17.94,83.97)-- (17.95,83.93);
+\draw (17.95,83.93)-- (17.91,83.94);
+\draw (18.44,84.05) node[anchor=north west] {$\vec B$};
+\draw (8,94)-- (8,92);
+\draw (8,92)-- (12,92);
+\draw (12,92)-- (12,94);
+\draw (12,94)-- (8,94);
+\draw (13,94)-- (17,94);
+\draw (17,92)-- (13,92);
+\draw (13,94)-- (13,92);
+\draw (17,94)-- (17,92);
+\draw [shift={(8.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(8.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(11.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(11.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw (13,94)-- (13,92);
+\draw (13,92)-- (17,92);
+\draw (17,92)-- (17,94);
+\draw (17,94)-- (13,94);
+\draw [shift={(13.13,94.91)}] plot[domain=4.64:5.79,variable=\t]({1*1.92*cos(\t r)+0*1.92*sin(\t r)},{0*1.92*cos(\t r)+1*1.92*sin(\t r)});
+\draw [shift={(13.27,92.89)}] plot[domain=-0.71:0.5,variable=\t]({1*1.37*cos(\t r)+0*1.37*sin(\t r)},{0*1.37*cos(\t r)+1*1.37*sin(\t r)});
+\draw [shift={(16.01,88.83)}] plot[domain=1.31:1.95,variable=\t]({1*3.91*cos(\t r)+0*3.91*sin(\t r)},{0*3.91*cos(\t r)+1*3.91*sin(\t r)});
+\draw [shift={(16.75,93.81)}] plot[domain=2.95:4.07,variable=\t]({1*1.34*cos(\t r)+0*1.34*sin(\t r)},{0*1.34*cos(\t r)+1*1.34*sin(\t r)});
+\draw [->] (8.68,93.26) -- (8.24,93.7);
+\draw [->] (9,93.53) -- (8.62,93.89);
+\draw [->] (8.46,92.58) -- (9,92);
+\draw [->] (8.87,92.75) -- (9.27,92.29);
+\draw [->] (9.98,93.51) -- (10.01,92.8);
+\draw [->] (10.2,93.51) -- (10.28,92.8);
+\draw [->] (10.28,92.15) -- (11.04,92.48);
+\draw [->] (10.89,92.15) -- (11.57,92.36);
+\draw [->] (11.26,93.56) -- (11.61,92.96);
+\draw [->] (11.57,93.7) -- (11.88,93.15);
+\draw [->] (13.28,93.73) -- (14.18,93.75);
+\draw [->] (13.17,93.45) -- (14.07,93.46);
+\draw [->] (13.46,92.78) -- (14.36,92.8);
+\draw [->] (13.44,92.44) -- (14.34,92.45);
+\draw [->] (15.12,92.4) -- (16.02,92.42);
+\draw [->] (15.12,92.17) -- (16.02,92.18);
+\draw [->] (15.84,93.72) -- (16.75,93.73);
+\draw [->] (15.89,93.42) -- (16.79,93.43);
+\draw [->] (14.71,93.21) -- (15.33,93.22);
+\draw [->] (14.75,92.91) -- (15.65,92.92);
+\draw [->] (13,94.48) -- (17.01,94.46);
+\draw (16.51,95.08) node[anchor=north west] {$B_0$};
+\draw (9.28,92.04) node[anchor=north west] {$\vec B_0 = 0$};
+\draw (14.59,92) node[anchor=north west] {$\vec B_0 \neq 0$};
+\draw [line width=1.2pt] (13,117)-- (13,113);
+\draw [line width=1.2pt] (17,113)-- (19,114);
+\draw [line width=1.2pt] (19,114)-- (19,118);
+\draw [line width=1.2pt] (19,118)-- (17,117);
+\draw [line width=1.2pt] (17,117)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (17,117);
+\draw [line width=1.2pt] (13,113)-- (17,113);
+\draw [line width=1.2pt] (13,117)-- (15,118);
+\draw [line width=1.2pt] (19,118)-- (15,118);
+\draw (13,113)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,118)-- (15,114);
+\draw [dash pattern=on 1pt off 1pt] (15,114)-- (19,114);
+\draw [color=qqccqq] (14.5,116)-- (15.28,116.37);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (14.5,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,114.5)-- (16,114.5);
+\draw [line width=1.2pt,color=qqccqq] (14.5,116)-- (16,116);
+\draw [line width=1.2pt,color=qqccqq] (16,116)-- (16,114.5);
+\draw [color=qqccqq] (16,116)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (16.67,116.36);
+\draw [color=qqccqq] (15.28,116.37)-- (15.25,114.86);
+\draw (14.5,114.5)-- (15.25,114.86);
+\draw [color=qqccqq] (16.67,116.36)-- (16.66,114.86);
+\draw [color=qqccqq] (16,114.5)-- (16.66,114.86);
+\draw (16.66,114.86)-- (15.25,114.86);
+\draw [color=qqccqq] (14.5,114.5)-- (13,113);
+\draw [color=qqccqq] (14.5,116)-- (13,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.28,116.37)-- (15,118);
+\draw [color=qqccqq] (16,114.5)-- (17,113);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.66,114.86)-- (19,114);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (16.67,116.36)-- (19,118);
+\draw [color=qqccqq] (16,116)-- (17,117);
+\draw [dash pattern=on 1pt off 1pt,color=qqccqq] (15.25,114.86)-- (15,114);
+\draw (20,117)-- (25,117);
+\draw (20,115)-- (25,115);
+\draw (25,117)-- (25,115);
+\draw (20,117)-- (20,115);
+\draw (21,117)-- (21,115);
+\draw (22,117)-- (22,115);
+\draw (23,117)-- (23,115);
+\draw (24,117)-- (24,115);
+\draw [->] (20.5,115.5) -- (20.5,116.65);
+\draw [->] (22.51,115.52) -- (22.49,116.72);
+\draw [->] (24.58,115.49) -- (24.56,116.76);
+\draw [->,color=qqccqq] (21.44,116.2) -- (21.44,115.4);
+\draw [->,color=qqccqq] (23.55,116.16) -- (23.59,115.42);
+\draw (25,156)-- (33,156);
+\draw (25,156)-- (25,151);
+\draw (33,156)-- (33,151);
+\draw (33,151)-- (25,151);
+\draw [dash pattern=on 1pt off 1pt] (29.01,156.46)-- (28.99,150.38);
+\draw [->] (25,150) -- (31,150);
+\draw [->] (32,151) -- (26,151);
+\draw [->] (33,155) -- (33,153);
+\draw [->] (27,156) -- (31,156);
+\draw [->] (25,153) -- (25,155);
+\draw (24.6,151.5) node[anchor=north west] {$1$};
+\draw (24.72,156.44) node[anchor=north west] {$2$};
+\draw (33.2,156.42) node[anchor=north west] {$3$};
+\draw (33.17,151.54) node[anchor=north west] {$4$};
+\draw (27.62,151.62) node[anchor=north west] {$b$};
+\draw [->,color=qqccqq] (25,153) -- (26,154);
+\draw [->,color=qqccqq] (33,154) -- (32,153);
+\draw [->,color=qqccqq] (33,151) -- (33,150);
+\draw [->,color=qqccqq] (25,151) -- (25,150);
+\draw (25.57,153.69) node[anchor=north west] {$\vec F_{1,2}$};
+\draw (31.77,154.14) node[anchor=north west] {$\vec F_{3,4}$};
+\draw (25.1,150.88) node[anchor=north west] {$M_{1,2}$};
+\draw (32.33,150.83) node[anchor=north west] {$M_{3,4}$};
+\draw (30.21,150.6) node[anchor=north west] {$\vec B$};
+\draw (23,183)-- (23,180);
+\draw (23,183)-- (28,183);
+\draw (28,183)-- (28,180);
+\draw (28,180)-- (23,180);
+\draw (31,183)-- (36,183);
+\draw (36,183)-- (36,180);
+\draw (31,183)-- (31,180);
+\draw (31,180)-- (36,180);
+\draw [->,color=qqccqq] (25.73,183) -- (25.77,184.02);
+\draw [->,color=qqccqq] (23,181) -- (22,181);
+\draw [->,color=qqccqq] (25,180) -- (25,179);
+\draw [->,color=qqccqq] (28,181) -- (29,181);
+\draw [->,color=qqccqq] (33.52,183) -- (33.52,181.93);
+\draw [->,color=qqccqq] (31,181) -- (32,181);
+\draw [->,color=qqccqq] (36,181) -- (34.7,180.99);
+\draw [->,color=qqccqq] (33.36,180) -- (33.36,181.17);
+\draw(24.36,181.47) circle (0.21cm);
+\draw (24.24,181.55)-- (24.44,181.41);
+\draw (24.46,181.57)-- (24.24,181.4);
+\draw [->] (23,180.5) -- (23,182.5);
+\draw [->] (26.5,180) -- (23.58,180);
+\draw [->] (28,182.5) -- (28,180.5);
+\draw [->] (24,183) -- (27.43,183);
+\draw (22.45,180.73) node[anchor=north west] {$1$};
+\draw (22.52,183.27) node[anchor=north west] {$2$};
+\draw (27.47,183.21) node[anchor=north west] {$3$};
+\draw (27.41,180.9) node[anchor=north west] {$4$};
+\draw (24.21,181.31) node[anchor=north west] {$\vec B$};
+\draw [color=qqccqq](25.39,183.82) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](22.34,181.57) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](25.12,179.78) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](28.52,181.51) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](31.33,181.69) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](33,182.91) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](33.55,180.92) node[anchor=north west] {$\vec F$};
+\draw [color=qqccqq](35.29,181.69) node[anchor=north west] {$\vec F$};
+\draw(32.08,181.58) circle (0.22cm);
+\draw (30.53,180.83) node[anchor=north west] {$1$};
+\draw (30.51,183.3) node[anchor=north west] {$2$};
+\draw (35.52,183.24) node[anchor=north west] {$3$};
+\draw (35.51,180.79) node[anchor=north west] {$4$};
+\draw (32.04,181.43) node[anchor=north west] {$\vec B$};
+\draw (25,205)-- (28,205);
+\draw (25,201)-- (28,201);
+\draw (25,205)-- (25,201);
+\draw (28,205)-- (28,201);
+\draw(25.43,204.44) circle (0.29cm);
+\draw (25.27,204.62)-- (25.56,204.28);
+\draw (25.56,204.66)-- (25.28,204.29);
+\draw(26.51,204.47) circle (0.29cm);
+\draw (26.41,204.67)-- (26.7,204.33);
+\draw (26.67,204.68)-- (26.39,204.32);
+\draw(27.29,204.48) circle (0.29cm);
+\draw (27.14,204.67)-- (27.42,204.33);
+\draw (27.42,204.7)-- (27.14,204.34);
+\draw(25.49,203.53) circle (0.29cm);
+\draw (25.34,203.72)-- (25.63,203.38);
+\draw (25.62,203.75)-- (25.34,203.39);
+\draw(26.42,203.54) circle (0.29cm);
+\draw (26.27,203.73)-- (26.56,203.39);
+\draw (26.55,203.76)-- (26.27,203.4);
+\draw(27.49,203.5) circle (0.29cm);
+\draw (27.34,203.69)-- (27.63,203.35);
+\draw (27.62,203.72)-- (27.35,203.36);
+\draw(25.58,202.46) circle (0.29cm);
+\draw (25.43,202.65)-- (25.71,202.31);
+\draw (25.71,202.68)-- (25.43,202.32);
+\draw(26.5,202.47) circle (0.29cm);
+\draw (26.35,202.66)-- (26.63,202.32);
+\draw (26.63,202.69)-- (26.35,202.33);
+\draw(27.48,202.42) circle (0.29cm);
+\draw (27.33,202.61)-- (27.62,202.27);
+\draw (27.61,202.64)-- (27.33,202.28);
+\draw(25.55,201.48) circle (0.29cm);
+\draw (25.39,201.66)-- (25.68,201.32);
+\draw (25.68,201.7)-- (25.4,201.33);
+\draw(26.42,201.48) circle (0.29cm);
+\draw (26.27,201.66)-- (26.56,201.32);
+\draw (26.55,201.7)-- (26.27,201.33);
+\draw(27.46,201.45) circle (0.29cm);
+\draw (27.31,201.63)-- (27.6,201.29);
+\draw (27.59,201.67)-- (27.31,201.3);
+\draw (28,205)-- (30,205);
+\draw (28,201)-- (30,201);
+\draw [->] (31,203) -- (31,205);
+\draw [->] (31,203) -- (31,201);
+\draw [->] (28,203) -- (29,203);
+\draw (29,205)-- (29,201);
+\draw [dash pattern=on 1pt off 1pt] (30,205)-- (30.73,205);
+\draw [dash pattern=on 1pt off 1pt] (30,201)-- (30.73,200.99);
+\draw [->,color=qqccqq] (29.3,203.04) -- (29.32,204.61);
+\draw [->] (28.12,203.32) -- (28.14,204.51);
+\draw (28.46,203.56) node[anchor=north west] {$\vec v$};
+\draw (29.4,204.23) node[anchor=north west] {$\vec E$};
+\draw (28.4,201.57) node[anchor=north west] {$dS$};
+\draw (25.79,205.06) node[anchor=north west] {$\vec B$};
+\draw (31.28,203.45) node[anchor=north west] {$l$};
+\draw (28.2,204.26) node[anchor=north west] {$i$};
+\begin{scriptsize}
+\draw[color=fftttt] (18.86,210.15) node {$\alpha$};
+\end{scriptsize}
+\end{tikzpicture}
+
+\end{center}
+Поскольку l есть подвижный участок, то на электроны участка будет действовать сила Лоренца:
+\[F_l = e \cdot v \cdot B \Rightarrow E_st = v \cdot B\]
+\[\mathscr{E} = \int_{I} \vec E_st \cdot d \vec l = E \cdot l\]
+\begin{center}
+    при постоянной скорости
+\end{center}
+
+Подставим скорость v:
+\[\mathscr{E} = v \cdot B \cdot l = \frac{dS}{dt} \cdot l \cdot \vec B = \frac{dS}{dt} \cdot \vec B = \langle B \cdot S - \text{поток В через площадь} S \rangle \Rightarrow\]
+\[\mathscr{E} = - \frac{d \Phi_B}{dt}\]
+\begin{center}
+    --- \textit{\textbf{ЭДС индукции}}
+\end{center}
 \end{document}
 
 
